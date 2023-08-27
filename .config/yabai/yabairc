@@ -1,0 +1,31 @@
+PADDING=4
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+yabai -m config bottom_padding $PADDING
+yabai -m config right_padding $PADDING
+yabai -m config left_padding $PADDING
+yabai -m config window_gap $PADDING
+
+
+yabai -m config auto_balance on
+yabai -m config window_topmost on
+yabai -m window_zoom_persist on
+
+yabai -m config --space 1 layout float
+
+
+nomanage_apps=(
+    "Finder"
+    "Raycast"
+    "System Preferences"
+    "Activity Monitor"
+    "Reminders"
+    "Notes"
+    "Calendar"
+    "Calculator"
+)
+
+for app in ${nomanage_apps[@]}; do
+    yabai -m rule --add app="^${app}$" manage=off
+done
