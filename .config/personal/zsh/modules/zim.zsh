@@ -23,7 +23,7 @@ bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
 
 # Prompt for spelling correction of commands.
-setopt CORRECT
+# setopt CORRECT
 
 # Customize spelling correction prompt.
 # SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
