@@ -1,5 +1,0 @@
-local current_file=$(dirname "$0")
-for e in $current_file/*.zsh; do; source $e; done
-
-export EDITOR=/opt/homebrew/bin/nvim
-export VISUAL=/opt/homebrew/bin/nvim
