@@ -15,3 +15,9 @@ vpn () {
     local SSHUTTLE_PID=$!
     echo $SSHUTTLE_PID >| $LOCK
 }
+
+lzyadm() {
+    cd ~
+    yadm enter lazygit
+    cd -
+}
