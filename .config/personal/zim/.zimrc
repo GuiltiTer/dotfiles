@@ -60,3 +60,4 @@ zmodule kiesman99/zim-zoxide
 zmodule sindresorhus/pure --source async.zsh --source pure.zsh
 zmodule qoomon/zsh-lazyload
 zmodule jeffreytse/zsh-vi-mode
+zmodule johannchangpro/zsh-interactive-cd
