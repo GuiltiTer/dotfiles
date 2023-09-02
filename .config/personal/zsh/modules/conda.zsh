@@ -15,7 +15,7 @@ __conda_initialize () {
     unset __conda_setup
 }
 
-arch_conda_selector() {
+conda_init() {
     if [[ $(arch) == "i386" ]]; then
         __conda_initialize "/Users/guiltiter/miniconda3_X86"
     else
