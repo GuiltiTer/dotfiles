@@ -1,1 +1,9 @@
-.load "yabai"
+# mode definitions
+:: normal @
+
+# mode swtiches
+cmd - escape ; normal
+normal < escape ; default
+
+.load "modules/normal_mode"
+.load "modules/yabai"

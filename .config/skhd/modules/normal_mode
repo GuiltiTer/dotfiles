@@ -1,0 +1,16 @@
+# scroll page
+normal < k : skhd -k "escape" && skhd -k "up" && skhd -k "cmd - escape"
+normal < j : skhd -k "escape" && skhd -k "down" && skhd -k "cmd - escape"
+normal < h : skhd -k "escape" && skhd -k "left" && skhd -k "cmd - escape"
+normal < l : skhd -k "escape" && skhd -k "right" && skhd -k "cmd - escape"
+
+# space focus change
+normal < alt - y : skhd -k "escape" && kshd -k "alt - y" && skhd -k "cmd - escape"
+normal < alt - u : skhd -k "escape" && kshd -k "alt - u" && skhd -k "cmd - escape"
+normal < alt - i : skhd -k "escape" && kshd -k "alt - i" && skhd -k "cmd - escape"
+normal < alt - o : skhd -k "escape" && kshd -k "alt - o" && skhd -k "cmd - escape"
+normal < alt - p : skhd -k "escape" && kshd -k "alt - p" && skhd -k "cmd - escape"
+normal < alt - 0x21 : skhd -k "escape" && kshd -k "alt - 0x21" && skhd -k "cmd - escape"
+normal < alt - 0x1E : skhd -k "escape" && kshd -k "alt - 0x1E" && skhd -k "cmd - escape"
+
+normal < q : skhd -k "escape" && skhd -k "cmd - w" && skhd -k "cmd - escape"
