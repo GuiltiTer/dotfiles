@@ -4,14 +4,20 @@ export FZF_DEFAULT_OPTS="--bind 'ctrl-d:preview-down,ctrl-u:preview-up' \
     --no-info --prompt='❯ ' --pointer=➜ \
     --color=bg+:-1,pointer:#ff79c6"
 
-c () {
+
+fzf_dir_do() {
     local label="SELECT DIRECTORY"
     local dir=$(fd --type directory --hidden | fzf --height=50% --border-label="╢ $label ╟" --border-label-pos=bottom)
-    [[ $dir != "" ]] && cd $dir
+    [[ $dir != "" ]] && $1 $dir
 }
 
-ff () {
+fzf_file_do() {
     local label="SELECT FILE"
-    local file_path=$(fd --type file --hidden | fzf --height=50% --border-label="╢ $label ╟" --border-label-pos=bottom --preview 'bat --style=numbers --color=always --line-range :500 {}')
-    [[ $file_path != "" ]] && nvim $file_path
+    local preview='bat --style=numbers --color=always --line-range :500 {}'
+    local file_path=$(fd --type file --hidden | fzf --height=50% --border-label="╢ $label ╟" --border-label-pos=bottom --preview $preview)
+    [[ $file_path != "" ]] && $1 $file_path
 }
+
+alias c="fzf_dir_do cd"
+alias fzedit="fzf_file_do nvim"
+alias fzopen="fzf_file_do open"
