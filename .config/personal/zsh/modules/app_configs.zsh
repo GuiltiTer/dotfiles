@@ -17,3 +17,5 @@ eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 lazyload conda -- 'conda_init'
+
+export PATH="$PATH:/Users/guiltiter/.local/bin" # pipx
