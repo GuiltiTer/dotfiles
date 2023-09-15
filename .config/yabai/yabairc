@@ -26,6 +26,7 @@ nomanage_apps=(
     "Calculator"
 )
 
-for app in ${nomanage_apps[@]}; do
-    yabai -m rule --add app="^${app}$" manage=off
+for(( i = 0; i < ${#nomanage_apps[@]}; i++ )); do
+    app_name="^${nomanage_apps[i]}$"
+    yabai -m rule --add app="$app_name" manage=off
 done
