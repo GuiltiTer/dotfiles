@@ -21,3 +21,8 @@ lzyadm() {
     yadm enter lazygit
     cd -
 }
+
+upall() {
+    brew upgrade
+    pipx upgrade-all
+}
