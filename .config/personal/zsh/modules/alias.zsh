@@ -14,7 +14,6 @@ alias cat=bat
 
 alias intel_login='env /usr/bin/arch -x86_64 /bin/zsh --login'
 
-alias manf='man $(compgen -c | fzf)'
 alias packages='brew leaves | fzf'
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
