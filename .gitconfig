@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+
+[user]
+	name = Mojtaba Babaei
+	email = babayi.mojtaba.mb@gmail.com
+
+[alias]
+	logg = log --graph --oneline --decorate
+	undo = reset HEAD~1 --mixed
