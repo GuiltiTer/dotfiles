@@ -25,6 +25,7 @@ nomanage_apps=(
     "Calendar"
     "Calculator"
     "JetBrains Toolbox"
+    "IINA"
 )
 
 for(( i = 0; i < ${#nomanage_apps[@]}; i++ )); do
