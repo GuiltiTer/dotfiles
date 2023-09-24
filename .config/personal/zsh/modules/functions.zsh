@@ -22,7 +22,9 @@ lzyadm() {
     cd -
 }
 
-upall() {
+updateall() {
+    echo "[BREW]"
     brew upgrade
+    echo "[PIPX]"
     pipx upgrade-all
 }
