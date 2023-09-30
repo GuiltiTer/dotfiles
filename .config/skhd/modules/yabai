@@ -11,15 +11,16 @@ alt + ctrl - k : yabai -m window --warp north
 alt + ctrl - l : yabai -m window --warp east
 
 # send window
-fn - h : yabai -m window --space prev
-fn - l : yabai -m window --space next
+fn - h : yabai -m window --space prev ; skhd -k "alt - 0x21"
+fn - l : yabai -m window --space next ; skhd -k "alt - 0x1E"
+
 
 # send window by space number
-fn - y : yabai -m window --space 1
-fn - u : yabai -m window --space 2
-fn - i : yabai -m window --space 3
-fn - o : yabai -m window --space 4
-fn - p : yabai -m window --space 5
+fn - y : yabai -m window --space 1 ; skhd -k "alt - y"
+fn - u : yabai -m window --space 2 ; skhd -k "alt - u"
+fn - i : yabai -m window --space 3 ; skhd -k "alt - i"
+fn - o : yabai -m window --space 4 ; skhd -k "alt - o"
+fn - p : yabai -m window --space 5 ; skhd -k "alt - p"
 
 # maximize toggle
 alt - return : yabai -m window --toggle zoom-fullscreen
