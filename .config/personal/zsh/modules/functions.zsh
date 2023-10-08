@@ -27,4 +27,6 @@ updateall() {
     brew upgrade
     echo "[PIPX]"
     pipx upgrade-all
+    echo "[ZIM]"
+    zimfw upgrade && zimfw update
 }
