@@ -19,3 +19,6 @@ eval "$(direnv hook zsh)"
 lazyload conda -- 'conda_init'
 
 export PATH="$PATH:/Users/guiltiter/.local/bin" # pipx
+
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
