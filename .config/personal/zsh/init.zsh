@@ -6,6 +6,7 @@ local configs=(
     "app_configs"
     "functions"
     "fzf"
+    "entr"
 )
 
 local modules_path=$(dirname "$0")/modules
