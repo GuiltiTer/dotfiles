@@ -29,4 +29,6 @@ updateall() {
     pipx upgrade-all
     echo "[ZIM]"
     zimfw upgrade && zimfw update
+    echo "[GUP]"
+    gup update
 }
