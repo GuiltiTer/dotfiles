@@ -26,4 +26,5 @@ updateall() {
     run zimfw upgrade
     run zimfw update
     run gup update
+    run cargo install-update --all
 }
