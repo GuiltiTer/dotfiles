@@ -1,9 +1,9 @@
 # mode definitions
-:: normal @
+# :: normal @
 
 # mode swtiches
-cmd - escape ; normal
-normal < escape ; default
+# cmd - escape ; normal
+# normal < escape ; default
 
-.load "modules/normal_mode"
+# .load "modules/normal_mode"
 .load "modules/yabai"
