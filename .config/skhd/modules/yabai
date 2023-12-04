@@ -44,4 +44,4 @@ alt - s : yabai -m window --toggle split
 alt - r : yabai --restart-service
 
 # float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
