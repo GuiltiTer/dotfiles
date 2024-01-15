@@ -14,6 +14,12 @@ cmd + shift - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\
   ||  yabai -m window --focus "$(yabai -m query --spaces --space | jq -re ".windows[0]?")" \
   &> /dev/null
   
+# resize window
+shift + alt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0 2> /dev/null
+shift + alt - j : yabai -m window --resize bottom:0:20 2> /dev/null || yabai -m window --resize top:0:20 2> /dev/null
+shift + alt - k : yabai -m window --resize bottom:0:-20 2> /dev/null || yabai -m window --resize top:0:-20 2> /dev/null
+shift + alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0 2> /dev/null
+
 # move window
 alt + ctrl - h : yabai -m window --warp west
 alt + ctrl - j : yabai -m window --warp south
