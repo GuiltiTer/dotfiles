@@ -3,7 +3,8 @@ alias la='exa -Flah --group-directories-first'
 alias ll='exa -Fl --group-directories-first'
 alias l='exa -Flah --group-directories-first'
 
-alias v="nvim ."
+alias v.="nvim ."
+alias v=nvim
 alias vi=nvim
 alias vim=nvim
 alias vide=neovide
