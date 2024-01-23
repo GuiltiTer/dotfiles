@@ -41,7 +41,7 @@ fn - p : yabai -m window --space 5 ; skhd -k "alt - p"
 alt - return : yabai -m window --toggle zoom-fullscreen
 
 # rebalance widow sizes
-alt - b : yabai -m space --balance
+alt - 0 : yabai -m space --balance
 
 # split orientation toggle
 alt - s : yabai -m window --toggle split
