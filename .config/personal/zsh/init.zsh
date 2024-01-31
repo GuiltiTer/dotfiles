@@ -7,6 +7,7 @@ local configs=(
     "functions"
     "fzf"
     "entr"
+    "keymaps"
 )
 
 local modules_path=$(dirname "$0")/modules
