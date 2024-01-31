@@ -1,2 +1,4 @@
 gui:
   showBottomLine: false
+os:
+  editPreset: "nvim"
