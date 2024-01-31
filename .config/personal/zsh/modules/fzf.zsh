@@ -18,6 +18,3 @@ fzf_file_do() {
     [[ $file_path != "" ]] && $1 $file_path
 }
 
-alias c="fzf_dir_do cd"
-alias fzedit="fzf_file_do nvim"
-alias fzopen="fzf_file_do open"

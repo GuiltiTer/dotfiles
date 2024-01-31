@@ -19,3 +19,7 @@ alias packages='brew leaves | fzf'
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'
+
+alias c="fzf_dir_do cd"
+alias fzedit="fzf_file_do nvim"
+alias fzopen="fzf_file_do open"
