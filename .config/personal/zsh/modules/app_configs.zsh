@@ -26,3 +26,6 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$PATH:/Users/guiltiter/Library/Application Support/JetBrains/Toolbox/scripts"
+
+export MODULAR_HOME="$HOME/.modular"
+export PATH="$HOME/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
