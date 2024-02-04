@@ -1,0 +1,54 @@
+environment {
+    terminal "Kitty"
+    textEditor "Visual Studio Code"
+}
+
+behavior {
+    theme "Kon"
+    quickSelect {
+        activateOnAnyCharacter false
+        defaultMode "regex"
+        filterMatchedItems true
+    }
+    layout {
+        showActionBar false
+    }
+    table {
+        showGoUpFolder false
+    }
+    actions {
+        core.lookup.mode "substring"
+    }
+}
+
+keyBindings {
+    "H" "core.go.up"
+    "L" "core.open"
+    "K" "core.move.up"
+    "J" "core.move.down"
+    "Shift+J" "core.select.move.down"
+    "Shift+K" "core.select.move.up"
+    "Ctrl+D" "core.move.page.down"
+    "Ctrl+U" "core.move.page.up"
+    "G" "core.move.home"
+    "Shift+G" "core.move.end"
+    "Ctrl+H" "core.change.current.pane"
+    "Ctrl+L" "core.change.current.pane"
+ 
+    "V" "core.select"
+    "Y" "core.clipboard.copy"
+    "P" "core.clipboard.paste"
+    "R" "core.rename"
+    "Shift+A" "core.new.folder"
+    "A" "core.new.file"
+    "D" "core.trash"
+    "Shift+D" "core.delete"
+    "T" "core.ext.terminal.open"
+    "E" "core.edit"
+    "F" "core.lookup.here"
+    "Shift+F" "core.lookup"
+    "O" "core.open.with"
+    "I" "core.finder.showInfo"
+    "S" "core.ordering"
+    "." "core.display.hidden"
+}
