@@ -51,3 +51,7 @@ alt - r : yabai --restart-service
 
 # float / unfloat window and center on screen
 alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# float / unfloat current space
+alt + shift - f : yabai -m config --space $(yabai -m query --spaces --space | jq -r .index) layout $(yabai -m query --spaces --space | jq -r 'if .type|contains("float") then "bsp" else "float" end')
+
+
