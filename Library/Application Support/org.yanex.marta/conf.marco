@@ -51,4 +51,5 @@ keyBindings {
     "I" "core.finder.showInfo"
     "S" "core.ordering"
     "." "core.display.hidden"
+    "Backspace" null
 }
