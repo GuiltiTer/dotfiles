@@ -11,4 +11,4 @@ _bindkey() {
 }
 
 _bindkey "^F" "fzf_dir_do cd"
-_bindkey "^O" "nvim ."
+_bindkey "^O" "ya"
