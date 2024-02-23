@@ -93,7 +93,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 # ------------------
 # Initialize modules
 # ------------------
-local ZDOTDIR=~/.config/personal/zim
+local ZDOTDIR=~/.config/zim
 ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 # Download zimfw plugin manager if missing.
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
