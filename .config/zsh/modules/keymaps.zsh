@@ -1,5 +1,5 @@
 _hotkey_counter=0
-_bindkey() {
+function _bindkey() {
     local counter=0
     local keymap=$1
     local cmd=$2

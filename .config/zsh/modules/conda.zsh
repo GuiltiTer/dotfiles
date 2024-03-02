@@ -1,4 +1,4 @@
-__conda_initialize () {
+function __conda_initialize () {
     local conda_path=$1
     __conda_setup="$('${conda_path}/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
     if [ $? -eq 0 ]
@@ -15,7 +15,7 @@ __conda_initialize () {
     unset __conda_setup
 }
 
-conda_init() {
+function conda_init() {
     if [[ $(arch) == "i386" ]]; then
         __conda_initialize "/Users/guiltiter/miniconda3_X86"
     else
