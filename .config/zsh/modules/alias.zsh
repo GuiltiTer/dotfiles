@@ -1,7 +1,6 @@
-alias ls='exa -F --group-directories-first'
-alias la='exa -Flah --git --group-directories-first'
-alias ll='exa -Fl --git --group-directories-first'
-alias l='exa -Flah --git --group-directories-first'
+alias ls='eza -F --group-directories-first'
+alias la='eza -F -alh --icons --git --group-directories-first'
+alias l='eza -F -lh --icons --git --group-directories-first'
 
 alias v.="nvim ."
 alias v=nvim
