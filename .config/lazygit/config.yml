@@ -1,4 +1,5 @@
 gui:
   showBottomLine: false
+  nerdFontsVersion: "3"
 os:
   editPreset: "nvim"
