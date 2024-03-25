@@ -1,5 +1,6 @@
 local configs=(
     "env"
+    "ui"
     "zim"
     "alias"
     "app_configs"
