@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+require("hooks")
 require("ui").apply_to_config(config)
 config.keys = require("mappings")
 
