@@ -1,5 +1,7 @@
-export FZF_DEFAULT_OPTS="--bind 'ctrl-d:preview-down,ctrl-u:preview-up' \
+export FZF_DEFAULT_OPTS=" \
+		--bind 'ctrl-d:preview-down,ctrl-u:preview-up' \
     --bind 'ctrl-p:toggle-preview' \
+    --bind 'tab:down,shift-tab:up' \
     --layout=reverse --border=rounded --margin 1% \
     --no-info --prompt='❯ ' --pointer=➜ \
     --color=bg+:-1,pointer:#ff79c6"
