@@ -15,6 +15,9 @@ function module.apply_to_config(config)
 	config.default_cursor_style = "BlinkingBlock"
 
 	config.animation_fps = 30
+
+	config.front_end = "WebGpu"
+	config.webgpu_power_preference = "HighPerformance"
 end
 
 return module
