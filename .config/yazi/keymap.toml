@@ -2,8 +2,8 @@
 prepend_keymap = [
   { on = [
     "l",
-  ], exec = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
+  ], run = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
   { on = [
     "s",
-  ], exec = "jump fzf" },
+  ], run = "jump fzf" },
 ]
