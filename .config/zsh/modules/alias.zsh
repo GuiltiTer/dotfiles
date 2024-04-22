@@ -9,7 +9,7 @@ alias ls='eza -F --group-directories-first'
 alias la='eza -F -alh --icons --git --group-directories-first'
 alias l='eza -F -lh --icons --git --group-directories-first'
 
-alias v.="nvim ."
+alias v.="nvim -c 'Telescope find_files'"
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
