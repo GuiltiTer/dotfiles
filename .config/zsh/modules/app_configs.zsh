@@ -28,3 +28,6 @@ export PATH="$PATH:/Users/guiltiter/Library/Application Support/JetBrains/Toolbo
 
 export MODULAR_HOME="$HOME/.modular"
 export PATH="$HOME/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
