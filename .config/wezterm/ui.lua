@@ -1,11 +1,12 @@
 local wezterm = require("wezterm")
+local env = require("env")
 local module = {}
 
 function module.apply_to_config(config)
-	config.color_scheme = "Tokyo Night"
+	config.color_scheme = env.color_scheme
 
-	config.font = wezterm.font("Cascadia Code", { weight = "Medium" })
-	config.font_size = 16.5
+	config.font = wezterm.font(env.font.family, { weight = env.font.weight })
+	config.font_size = env.font.size
 
 	config.window_decorations = "RESIZE"
 	config.adjust_window_size_when_changing_font_size = false
