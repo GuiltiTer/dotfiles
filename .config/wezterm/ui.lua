@@ -17,6 +17,8 @@ function module.apply_to_config(config)
 
 	config.animation_fps = 30
 
+	config.hide_tab_bar_if_only_one_tab = true
+
 	config.front_end = "WebGpu"
 	config.webgpu_power_preference = "HighPerformance"
 end
