@@ -12,3 +12,4 @@ function _bindkey() {
 
 _bindkey "^F" "fzf_dir_do cd"
 _bindkey "^O" "ya"
+_bindkey "^G" "cd"
