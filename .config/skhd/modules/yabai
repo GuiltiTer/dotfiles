@@ -4,6 +4,13 @@ alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
+# move focus to display
+alt - left : yabai -m display --focus west
+alt - down : yabai -m display --focus south
+alt - up : yabai -m display --focus north
+alt - right : yabai -m display --focus east
+
+
 # cycle focus
 cmd - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
   && yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")" \
