@@ -5,5 +5,5 @@ prepend_keymap = [
   ], run = "plugin --sync smart-enter", desc = "Enter the child directory, or open the file" },
   { on = [
     "s",
-  ], run = "jump fzf" },
+  ], run = "plugin fzf" },
 ]
