@@ -47,18 +47,16 @@ fn - p : yabai -m window --space 5 ; skhd -k "alt - p"
 # maximize toggle
 alt - return : yabai -m window --toggle zoom-fullscreen
 
-# rebalance widow sizes
-alt - 0 : yabai -m space --balance
+# rebalance widow sizes using =
+alt - 0x18 : yabai -m space --balance
 
 # split orientation toggle
 alt - s : yabai -m window --toggle split
 
 # restart yabai service
-fn - 0 : yabai --restart-service
+alt - 0 : yabai --restart-service
 
 # float / unfloat window and center on screen
 alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
 # float / unfloat current space
 alt + shift - f : yabai -m config --space $(yabai -m query --spaces --space | jq -r .index) layout $(yabai -m query --spaces --space | jq -r 'if .type|contains("float") then "bsp" else "float" end')
-
-
