@@ -17,7 +17,7 @@ lazyload pyenv -- 'eval "$(pyenv init -)"'
 
 eval "$(direnv hook zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 lazyload conda -- 'conda_init'
 
