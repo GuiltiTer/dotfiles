@@ -12,11 +12,11 @@ alt - right : yabai -m display --focus east
 
 
 # cycle focus
-cmd - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
+alt - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
   && yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")" \
   ||  yabai -m window --focus "$(yabai -m query --spaces --space | jq -re ".windows[0]?")" \
   &> /dev/null
-cmd + shift - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
+alt + shift - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
   && yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | reverse | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")" \
   ||  yabai -m window --focus "$(yabai -m query --spaces --space | jq -re ".windows[0]?")" \
   &> /dev/null
@@ -34,15 +34,15 @@ alt + ctrl - k : yabai -m window --warp north
 alt + ctrl - l : yabai -m window --warp east
 
 # send window
-fn - h : yabai -m window --space prev ; skhd -k "alt - 0x21"
-fn - l : yabai -m window --space next ; skhd -k "alt - 0x1E"
+alt + cmd - h : yabai -m window --space prev
+alt + cmd - l : yabai -m window --space next
 
 # send window by space number
-fn - y : yabai -m window --space 1 ; skhd -k "alt - y"
-fn - u : yabai -m window --space 2 ; skhd -k "alt - u"
-fn - i : yabai -m window --space 3 ; skhd -k "alt - i"
-fn - o : yabai -m window --space 4 ; skhd -k "alt - o"
-fn - p : yabai -m window --space 5 ; skhd -k "alt - p"
+alt + cmd - y : yabai -m window --space 1 ; skhd -k "alt - y"
+alt + cmd - u : yabai -m window --space 2 ; skhd -k "alt - u"
+alt + cmd - i : yabai -m window --space 3 ; skhd -k "alt - i"
+alt + cmd - o : yabai -m window --space 4 ; skhd -k "alt - o"
+alt + cmd - p : yabai -m window --space 5 ; skhd -k "alt - p"
 
 # maximize toggle
 alt - return : yabai -m window --toggle zoom-fullscreen
