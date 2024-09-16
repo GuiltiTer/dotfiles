@@ -6,9 +6,6 @@ lazyload ocaml opam dune utop -- '[[ ! -r /Users/guiltiter/.opam/opam-init/init.
 
 lazyload ghcup ghci ghc cabal stack -- '[ -f "/Users/guiltiter/.ghcup/env" ] && source "/Users/guiltiter/.ghcup/env"'
 
-export NVM_DIR="$HOME/.nvm"
-lazyload nvm -- '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
-
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
