@@ -30,3 +30,5 @@ export PATH="$HOME/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
