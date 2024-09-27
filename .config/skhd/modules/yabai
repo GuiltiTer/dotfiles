@@ -1,15 +1,55 @@
+#Basic #########################################################################
+# restart yabai service
+alt - 0 : yabai --restart-service
+# rebalance widow sizes using =
+alt - 0x18 : yabai -m space --balance
+
+# maximize toggle
+alt - return : yabai -m window --toggle zoom-fullscreen
+alt + shift - return : yabai -m window --toggle zoom-parent
+
+# rotate tree
+alt - r : yabai -m window --toggle split
+
 # move focus
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 
-# move focus to display
-alt - left : yabai -m display --focus west
-alt - down : yabai -m display --focus south
-alt - up : yabai -m display --focus north
-alt - right : yabai -m display --focus east
+# resize window
+alt + shift - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0 2> /dev/null
+alt + shift - j : yabai -m window --resize bottom:0:20 2> /dev/null || yabai -m window --resize top:0:20 2> /dev/null
+alt + shift - k : yabai -m window --resize bottom:0:-20 2> /dev/null || yabai -m window --resize top:0:-20 2> /dev/null
+alt + shift - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0 2> /dev/null
 
+#Float #########################################################################
+# float / unfloat window and center on screen
+alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# float / unfloat current space
+alt + shift - f : yabai -m config --space $(yabai -m query --spaces --space | jq -r .index) layout $(yabai -m query --spaces --space | jq -r 'if .type|contains("float") then "bsp" else "float" end')
+
+#Stack #########################################################################
+# stack windows
+alt - up : yabai -m window --stack north
+alt - down : yabai -m window --stack south
+alt - left : yabai -m window --stack west
+alt - right : yabai -m window --stack east
+# cycle stacked windows
+alt - n : yabai -m window --focus stack.next 2> /dev/null || yabai -m window --focus stack.prev 2> /dev/null
+# cycle the other (vertically) stacked window
+alt - m : (yabai -m window --focus east 2> /dev/null || yabai -m window --focus west 2> /dev/null) \
+  && (yabai -m window --focus stack.next 2> /dev/null || yabai -m window --focus stack.prev 2> /dev/null) \
+  && (yabai -m window --focus east 2> /dev/null || yabai -m window --focus west 2> /dev/null)
+# toggle stacked
+alt + shift - n : yabai -m window --toggle float && yabai -m window --toggle float
+ 
+#Space #########################################################################
+# move window in current space
+alt + ctrl - h : yabai -m window --warp west
+alt + ctrl - j : yabai -m window --warp south
+alt + ctrl - k : yabai -m window --warp north
+alt + ctrl - l : yabai -m window --warp east
 
 # cycle focus
 alt - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\"has-focus\" == true)) | length != 0") = true ] \
@@ -20,43 +60,3 @@ alt + shift - tab : [ $(yabai -m query --windows --space | jq -re "map(select(.\
   && yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | reverse | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")" \
   ||  yabai -m window --focus "$(yabai -m query --spaces --space | jq -re ".windows[0]?")" \
   &> /dev/null
-  
-# resize window
-shift + alt - h : yabai -m window --resize right:-20:0 2> /dev/null || yabai -m window --resize left:-20:0 2> /dev/null
-shift + alt - j : yabai -m window --resize bottom:0:20 2> /dev/null || yabai -m window --resize top:0:20 2> /dev/null
-shift + alt - k : yabai -m window --resize bottom:0:-20 2> /dev/null || yabai -m window --resize top:0:-20 2> /dev/null
-shift + alt - l : yabai -m window --resize right:20:0 2> /dev/null || yabai -m window --resize left:20:0 2> /dev/null
-
-# move window
-alt + ctrl - h : yabai -m window --warp west
-alt + ctrl - j : yabai -m window --warp south
-alt + ctrl - k : yabai -m window --warp north
-alt + ctrl - l : yabai -m window --warp east
-
-# send window
-alt + cmd - h : yabai -m window --space prev
-alt + cmd - l : yabai -m window --space next
-
-# send window by space number
-alt + cmd - y : yabai -m window --space 1 ; skhd -k "alt - y"
-alt + cmd - u : yabai -m window --space 2 ; skhd -k "alt - u"
-alt + cmd - i : yabai -m window --space 3 ; skhd -k "alt - i"
-alt + cmd - o : yabai -m window --space 4 ; skhd -k "alt - o"
-alt + cmd - p : yabai -m window --space 5 ; skhd -k "alt - p"
-
-# maximize toggle
-alt - return : yabai -m window --toggle zoom-fullscreen
-
-# rebalance widow sizes using =
-alt - 0x18 : yabai -m space --balance
-
-# split orientation toggle
-alt - s : yabai -m window --toggle split
-
-# restart yabai service
-alt - 0 : yabai --restart-service
-
-# float / unfloat window and center on screen
-alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
-# float / unfloat current space
-alt + shift - f : yabai -m config --space $(yabai -m query --spaces --space | jq -r .index) layout $(yabai -m query --spaces --space | jq -r 'if .type|contains("float") then "bsp" else "float" end')
