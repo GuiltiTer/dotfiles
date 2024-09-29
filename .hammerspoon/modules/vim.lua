@@ -14,17 +14,10 @@ vim_mode
 	:shouldShowAlertInNormalMode(true)
 	:setAlertFont("Fira Code")
 
-
-
-mod_key("shift", function()
+mod_key("ctrl", function()
 	if vim_mode:isMode("insert") then
 		vim_mode:enter()
 	else
 		vim_mode:exit()
 	end
-end)
-
-
-
-
-
+end, 0.2)
