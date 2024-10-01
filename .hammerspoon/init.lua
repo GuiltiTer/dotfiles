@@ -1,8 +1,8 @@
 local modules = {
 	"emmy",
 	"vim",
-	"scroll",
 	"auto_reload",
+	"modals.scroll",
 }
 
 for _, module in ipairs(modules) do
