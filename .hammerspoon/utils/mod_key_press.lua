@@ -1,45 +1,37 @@
 local mod_key_press = function(key, action, timeout)
-	local pressed = false
-	local released = false
-	local other_key_pressed = false
+	local is_single_mod_pressed = false
 	local hold_time = timeout or 0.1
 
 	local mod_key_down = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged }, function(event)
-		local flags = event:getFlags()
+		is_single_mod_pressed = event:getFlags()[key]
 
-		if flags[key] and not pressed then
-			pressed = true
-			released = false
-			other_key_pressed = false
-
+		if is_single_mod_pressed then
 			hs.timer.doAfter(hold_time, function()
-				if pressed and not released and not other_key_pressed then
-					pressed = false
-				end
+				is_single_mod_pressed = false
 			end)
-		elseif not flags[key] and pressed then
-			released = true
+		end
 
-			if pressed and not other_key_pressed then
-				action()
-			end
+		return false
+	end)
 
-			pressed = false
+	local mod_key_up = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged }, function(event)
+		if not event:getFlags()[key] and is_single_mod_pressed then
+			action()
 		end
 
 		return false
 	end)
 
 	local other_keys_down = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event)
-		if pressed then
-			other_key_pressed = true
-		end
+		is_single_mod_pressed = false
 		return false
 	end)
 
-	-- Start the event listeners
 	mod_key_down:start()
+	mod_key_up:start()
 	other_keys_down:start()
 end
 
-return mod_key_press
+return {
+	register_mod_key_press_action = mod_key_press,
+}
