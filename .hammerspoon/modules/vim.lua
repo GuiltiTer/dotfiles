@@ -14,7 +14,7 @@ vim_mode
 	:shouldShowAlertInNormalMode(true)
 	:setAlertFont("Fira Code")
 
-mod_key.register_mod_key_press_action("ctrl", function()
+mod_key.register_mod_key_press_action("shift", function()
 	if vim_mode:isMode("insert") then
 		vim_mode:enter()
 	else
