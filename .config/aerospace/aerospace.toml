@@ -12,8 +12,6 @@
 # All possible modifiers: cmd, alt, ctrl, shift
 
 start-at-login = true
-enable-normalization-flatten-containers = true
-enable-normalization-opposite-orientation-for-nested-containers = true
 default-root-container-layout = 'tiles'
 default-root-container-orientation = 'auto'
 key-mapping.preset = 'qwerty'
@@ -53,9 +51,6 @@ alt-shift-enter = 'layout accordion tiles'
 alt-backslash = 'workspace-back-and-forth'
 alt-slash = 'exec-and-forget aerospace focus left && aerospace focus up && aerospace focus right'
 
-alt-minus = 'resize smart -50'
-alt-equal = 'resize smart +50'
-
 alt-semicolon = 'mode manage'
 alt-m = 'mode monitor'
 
@@ -64,6 +59,9 @@ esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] 
 f = ['layout floating tiling', 'mode main'] 
 backspace = ['close-all-windows-but-current', 'mode main']
+
+minus = 'resize smart -50'
+equal = 'resize smart +50'
 
 h = ['join-with left', 'mode main']
 j = ['join-with down', 'mode main']
@@ -93,10 +91,10 @@ j = ['focus-monitor down', 'mode main']
 k = ['focus-monitor up', 'mode main']
 l = ['focus-monitor right', 'mode main']
 
-alt-h = ['move-node-to-monitor --wrap-around left', 'mode main']
-alt-j = ['move-node-to-monitor --wrap-around down', 'mode main']
-alt-k = ['move-node-to-monitor --wrap-around up', 'mode main']
-alt-l = ['move-node-to-monitor --wrap-around up', 'mode main']
+alt-h = ['move-node-to-monitor --wrap-around left', 'focus-monitor left', 'mode main']
+alt-j = ['move-node-to-monitor --wrap-around down', 'focus-monitor down', 'mode main']
+alt-k = ['move-node-to-monitor --wrap-around up', 'focus-monitor up', 'mode main']
+alt-l = ['move-node-to-monitor --wrap-around right', 'focus-monitor right', 'mode main']
 
 
 
