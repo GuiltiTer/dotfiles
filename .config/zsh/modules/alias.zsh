@@ -21,6 +21,7 @@ alias cat=bat
 alias intel_login='env /usr/bin/arch -x86_64 /bin/zsh --login'
 
 alias packages='brew leaves | fzf'
+alias upgrade='topgrade --only brew_cask brew_formula custom_commands go pipx cargo self_update vim'
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'
