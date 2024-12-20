@@ -20,12 +20,11 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 accordion-padding = 16
 [gaps]
 inner.horizontal = 0
-inner.vertical =   0
-outer.left =       4
-outer.bottom =     4
-outer.top =        0
-outer.right =      4
-
+inner.vertical = 0
+outer.left = 4
+outer.bottom = 4
+outer.top = 0
+outer.right = 4
 
 
 [mode.main.binding]
@@ -48,7 +47,7 @@ alt-p = 'workspace P'
 alt-enter = 'fullscreen'
 alt-shift-enter = 'layout accordion tiles'
 
-alt-backslash = 'workspace-back-and-forth'
+alt-n = 'workspace-back-and-forth'
 
 alt-slash = '''exec-and-forget
 aerospace focus right --boundaries-action wrap-around-the-workspace &&
@@ -61,8 +60,8 @@ alt-m = 'mode monitor'
 
 [mode.manage.binding]
 esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main'] 
-f = ['layout floating tiling', 'mode main'] 
+r = ['flatten-workspace-tree', 'mode main']
+f = ['layout floating tiling', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
 
 minus = 'resize smart -50'
@@ -96,11 +95,26 @@ j = ['focus-monitor down', 'mode main']
 k = ['focus-monitor up', 'mode main']
 l = ['focus-monitor right', 'mode main']
 
-alt-h = ['move-node-to-monitor --wrap-around left', 'focus-monitor left', 'mode main']
-alt-j = ['move-node-to-monitor --wrap-around down', 'focus-monitor down', 'mode main']
-alt-k = ['move-node-to-monitor --wrap-around up', 'focus-monitor up', 'mode main']
-alt-l = ['move-node-to-monitor --wrap-around right', 'focus-monitor right', 'mode main']
-
+alt-h = [
+  'move-node-to-monitor --wrap-around left',
+  'focus-monitor left',
+  'mode main',
+]
+alt-j = [
+  'move-node-to-monitor --wrap-around down',
+  'focus-monitor down',
+  'mode main',
+]
+alt-k = [
+  'move-node-to-monitor --wrap-around up',
+  'focus-monitor up',
+  'mode main',
+]
+alt-l = [
+  'move-node-to-monitor --wrap-around right',
+  'focus-monitor right',
+  'mode main',
+]
 
 
 [[on-window-detected]]
@@ -121,19 +135,19 @@ run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace U' 
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace U' 
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'com.tdesktop.Telegram'
-run = 'move-node-to-workspace P' 
+run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
-run = 'move-node-to-workspace P' 
+run = 'move-node-to-workspace P'
 
 
 [[on-window-detected]]
