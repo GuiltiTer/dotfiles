@@ -1,0 +1,9 @@
+theme = tokyonight
+font-family = JetBrains Mono
+font-size = 16
+
+macos-titlebar-style = hidden
+window-decoration = true
+
+window-padding-balance = true
+
