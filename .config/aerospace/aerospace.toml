@@ -45,7 +45,6 @@ alt-o = 'workspace O'
 alt-p = 'workspace P'
 
 alt-enter = 'fullscreen'
-alt-shift-enter = 'layout accordion tiles'
 
 alt-n = 'workspace-back-and-forth'
 
@@ -58,7 +57,9 @@ aerospace focus left --boundaries-action wrap-around-the-workspace
 alt-semicolon = 'mode manage'
 alt-m = 'mode monitor'
 
+
 [mode.manage.binding]
+
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main']
 f = ['layout floating tiling', 'mode main']
@@ -71,6 +72,8 @@ h = ['join-with left', 'mode main']
 j = ['join-with down', 'mode main']
 k = ['join-with up', 'mode main']
 l = ['join-with right', 'mode main']
+
+alt-semicolon = ['layout accordion tiles', 'mode main']
 
 alt-h = ['join-with left', 'layout v_accordion', 'mode main']
 alt-j = ['join-with down', 'layout v_accordion', 'mode main']
