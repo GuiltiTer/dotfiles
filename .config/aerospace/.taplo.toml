@@ -1,0 +1,4 @@
+[formatting]
+    indent_entries = true
+    indent_string  = "    "
+    align_entries  = true
