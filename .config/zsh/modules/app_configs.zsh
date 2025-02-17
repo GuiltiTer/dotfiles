@@ -31,6 +31,8 @@ export PATH="$HOME/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
 	. '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
 fi
