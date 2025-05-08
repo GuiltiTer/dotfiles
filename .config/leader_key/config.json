@@ -1,0 +1,153 @@
+{
+  "actions": [
+    {
+      "actions": [
+        {
+          "key": "t",
+          "type": "application",
+          "value": "/Applications/Telegram Desktop.app"
+        },
+        {
+          "key": "M",
+          "type": "application",
+          "value": "/System/Applications/Music.app"
+        },
+        {
+          "key": "m",
+          "type": "application",
+          "value": "/System/Applications/Messages.app"
+        }
+      ],
+      "key": "m",
+      "label": "Media",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "s",
+          "type": "application",
+          "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key": "z",
+          "type": "application",
+          "value": "/Applications/Zen Browser.app"
+        },
+        {
+          "key": "c",
+          "type": "application",
+          "value": "/Applications/Google Chrome.app"
+        },
+        {
+          "key": "f",
+          "type": "application",
+          "value": "/Applications/Firefox.app"
+        },
+        {
+          "actions": [
+            {
+              "key": "y",
+              "label": "YouTube",
+              "type": "url",
+              "value": "https://youtube.com"
+            }
+          ],
+          "key": "l",
+          "label": "Link",
+          "type": "group"
+        }
+      ],
+      "key": "b",
+      "label": "Browser",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "d",
+          "type": "folder",
+          "value": "/Users/guiltiter/Downloads"
+        },
+        {
+          "key": "u",
+          "type": "folder",
+          "value": "/Users/guiltiter"
+        },
+        {
+          "key": "f",
+          "label": "Find Files",
+          "type": "url",
+          "value": "raycast://extensions/raycast/file-search/search-files"
+        }
+      ],
+      "key": "f",
+      "label": "Finder",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "o",
+          "type": "application",
+          "value": "/Applications/oblivion-desktop.app"
+        },
+        {
+          "key": "s",
+          "type": "application",
+          "value": "/Applications/Streisand.app"
+        },
+        {
+          "key": "v",
+          "label": "VPN List",
+          "type": "url",
+          "value": "raycast://extensions/rasmusbe/connect-to-vpn/index"
+        },
+        {
+          "key": "h",
+          "type": "application",
+          "value": "/Applications/Hiddify.app"
+        }
+      ],
+      "key": "v",
+      "label": "Utils",
+      "type": "group"
+    },
+    {
+      "key": "t",
+      "type": "application",
+      "value": "/Applications/Ghostty.app"
+    },
+    {
+      "key": "e",
+      "label": "Emoji",
+      "type": "url",
+      "value": "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+    },
+    {
+      "key": "s",
+      "label": "Raycast",
+      "type": "application",
+      "value": "/Applications/Raycast.app"
+    },
+    {
+      "key": "a",
+      "label": "Actions",
+      "type": "url",
+      "value": "raycast://extensions/raycast/navigation/search-menu-items"
+    },
+    {
+      "key": "M",
+      "label": "Menu Items",
+      "type": "url",
+      "value": "raycast://extensions/raycast/navigation/search-menu-items"
+    },
+    {
+      "key": "k",
+      "label": "Kill",
+      "type": "url",
+      "value": "raycast://extensions/rolandleth/kill-process/index"
+    }
+  ],
+  "type": "group"
+}
