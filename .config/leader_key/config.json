@@ -147,6 +147,12 @@
       "label" : "Kill",
       "type" : "url",
       "value" : "raycast://extensions/rolandleth/kill-process/index"
+    },
+    {
+      "key" : " ",
+      "label" : "Switcher",
+      "type" : "url",
+      "value" : "raycast://extensions/limonkufu/aerospace/switchApps?arguments=%7B%22workspace%22%3A%22all%22%7D"
     }
   ],
   "type" : "group"
