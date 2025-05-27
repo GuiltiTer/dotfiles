@@ -1,0 +1,34 @@
+theme = "system"
+
+[widgets]
+displayed = [
+    "default.spaces",
+    "spacer",
+    "default.network",
+    "default.battery",
+    "divider",
+    "default.time",
+]
+
+[widgets.default.spaces]
+space.show-key = true
+window.show-title = false
+
+[widgets.default.battery]
+show-percentage = false
+warning-level = 20
+critical-level = 10
+
+[widgets.default.time]
+format = "d E, J:mm"
+calendar.format = "J:mm"
+
+calendar.show-events = true
+
+[popup.default.time]
+view-variant = "box"
+
+
+[experimental.foreground]
+height = 32.0
+
