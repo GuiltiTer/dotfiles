@@ -30,5 +30,4 @@ view-variant = "box"
 
 
 [experimental.foreground]
-height = 32.0
-
+height = "menu-bar"
