@@ -2,12 +2,12 @@ theme = "system"
 
 [widgets]
 displayed = [
-    "default.spaces",
-    "spacer",
-    "default.network",
-    "default.battery",
-    "divider",
-    "default.time",
+  "default.spaces",
+  "spacer",
+  "default.network",
+  "default.battery",
+  "divider",
+  "default.time",
 ]
 
 [widgets.default.spaces]
@@ -15,7 +15,7 @@ space.show-key = true
 window.show-title = false
 
 [widgets.default.battery]
-show-percentage = false
+show-percentage = true
 warning-level = 20
 critical-level = 10
 
