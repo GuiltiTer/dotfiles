@@ -74,7 +74,7 @@ accordion-padding = 16
     '''
 
     alt-semicolon = 'mode manage'
-    alt-quote     = 'mode display'
+    alt-m         = 'mode display'
 
 [mode.manage.binding]
 
@@ -172,8 +172,4 @@ accordion-padding = 16
 
 [[on-window-detected]]
     if.app-id = 'com.apple.finder'
-    run       = 'layout floating'
-
-[[on-window-detected]]
-    if.app-id = 'com.effect.streisand'
     run       = 'layout floating'
