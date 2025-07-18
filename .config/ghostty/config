@@ -7,3 +7,4 @@ window-decoration = true
 
 window-padding-balance = true
 
+adjust-cursor-thickness = 3
