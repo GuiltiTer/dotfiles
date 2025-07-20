@@ -1,6 +1,7 @@
 theme = tokyonight
 font-family = JetBrains Mono
 font-size = 16
+font-variation = wght=600
 
 macos-titlebar-style = hidden
 window-decoration = true
