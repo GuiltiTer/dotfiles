@@ -24,7 +24,7 @@ accordion-padding = 16
     inner.vertical   = 0
     outer.left       = 4
     outer.bottom     = 4
-    outer.top        = 0
+    outer.top        = 4
     outer.right      = 4
 
 
@@ -34,16 +34,16 @@ accordion-padding = 16
     alt-k = 'focus up    --boundaries-action wrap-around-the-workspace'
     alt-l = 'focus right --boundaries-action wrap-around-the-workspace'
 
-    alt-1 = 'focus --dfs-index 0'
-    alt-2 = 'focus --dfs-index 1'
-    alt-3 = 'focus --dfs-index 2'
-    alt-4 = 'focus --dfs-index 3'
-    alt-5 = 'focus --dfs-index 4'
-    alt-6 = 'focus --dfs-index 5'
-    alt-7 = 'focus --dfs-index 6'
-    alt-8 = 'focus --dfs-index 7'
-    alt-9 = 'focus --dfs-index 8'
-    alt-0 = 'focus --dfs-index 9'
+    # alt-1 = 'focus --dfs-index 0'
+    # alt-2 = 'focus --dfs-index 1'
+    # alt-3 = 'focus --dfs-index 2'
+    # alt-4 = 'focus --dfs-index 3'
+    # alt-5 = 'focus --dfs-index 4'
+    # alt-6 = 'focus --dfs-index 5'
+    # alt-7 = 'focus --dfs-index 6'
+    # alt-8 = 'focus --dfs-index 7'
+    # alt-9 = 'focus --dfs-index 8'
+    # alt-0 = 'focus --dfs-index 9'
 
     alt-shift-h = 'move left'
     alt-shift-j = 'move down'
@@ -55,12 +55,20 @@ accordion-padding = 16
     alt-i = 'workspace 3'
     alt-o = 'workspace 4'
     alt-p = 'workspace 5'
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
 
     alt-shift-y = ['move-node-to-workspace 1', 'workspace 1', 'mode main']
     alt-shift-u = ['move-node-to-workspace 2', 'workspace 2', 'mode main']
     alt-shift-i = ['move-node-to-workspace 3', 'workspace 3', 'mode main']
     alt-shift-o = ['move-node-to-workspace 4', 'workspace 4', 'mode main']
     alt-shift-p = ['move-node-to-workspace 5', 'workspace 5', 'mode main']
+    alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6', 'mode main']
+    alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7', 'mode main']
+    alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8', 'mode main']
+    alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9', 'mode main']
 
 
     alt-enter = 'fullscreen --no-outer-gaps'
@@ -91,12 +99,13 @@ accordion-padding = 16
     k = ['join-with up   ', 'mode main']
     l = ['join-with right', 'mode main']
 
-    alt-semicolon = ['layout accordion tiles', 'mode main']
-
     alt-h = ['join-with left ', 'layout v_accordion', 'mode main']
     alt-j = ['join-with down ', 'layout v_accordion', 'mode main']
     alt-k = ['join-with up   ', 'layout v_accordion', 'mode main']
     alt-l = ['join-with right', 'layout v_accordion', 'mode main']
+
+    alt-semicolon = ['layout accordion tiles    ', 'mode main']
+    alt-quote     = ['layout horizontal vertical', 'mode main']
 
     t = ['layout tiles     horizontal vertical', 'mode main']
     a = ['layout accordion horizontal vertical', 'mode main']
