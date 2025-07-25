@@ -1,7 +1,7 @@
 alias q=exit
 alias a=touch
 alias A=mkdir
-alias e=yazi
+alias y=yazi
 alias c=clear
 alias s="fzf_dir_do cd"
 
