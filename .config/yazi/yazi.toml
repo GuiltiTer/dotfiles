@@ -2,3 +2,12 @@
 sort_dir_first = true
 sort_by = "natural"
 
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
