@@ -6,7 +6,6 @@ local configs=(
 	"app_configs"
 	"conda"
 	"functions"
-	"fzf"
 	"entr"
 	"keymaps"
 )

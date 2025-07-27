@@ -10,6 +10,5 @@ function _bindkey() {
 	((_hotkey_counter++))
 }
 
-_bindkey "^F" "fzf_dir_do cd"
 _bindkey "^O" "yazi"
 _bindkey "^G" "cd"
