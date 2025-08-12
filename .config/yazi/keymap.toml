@@ -1,9 +1,2 @@
 [mgr]
-prepend_keymap = [
-  { on = [
-    "l",
-  ], run = "plugin augment-command -- enter --smart", desc = "Enter the child directory, or open the file" },
-  { on = [
-    "s",
-  ], run = "plugin fzf" },
-]
+prepend_keymap = [{ on = ["s"], run = "plugin fzf" }]
