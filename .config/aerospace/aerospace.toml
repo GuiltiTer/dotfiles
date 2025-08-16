@@ -93,6 +93,7 @@ accordion-padding = 16
 
     alt-semicolon = 'mode manage'
     alt-m         = 'mode display'
+    alt-r         = 'mode resize'
 
 [mode.manage.binding]
 
@@ -150,6 +151,19 @@ accordion-padding = 16
         'focus-monitor right',
         'mode main',
     ]
+
+[mode.resize.binding]
+    esc = 'mode main'
+
+    b = 'balance-sizes'
+
+    minus = 'resize smart -50'
+    equal = 'resize smart +50'
+
+    l = 'resize width +50'
+    h = 'resize width -50'
+    j = 'resize height -50'
+    k = 'resize height +50'
 
 
 [[on-window-detected]]
