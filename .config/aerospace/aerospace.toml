@@ -20,8 +20,8 @@ on-focused-monitor-changed         = ['move-mouse monitor-lazy-center']
 accordion-padding = 16
 
 [gaps]
-    inner.horizontal = 0
-    inner.vertical   = 0
+    inner.horizontal = 4
+    inner.vertical   = 4
     outer.left       = 4
     outer.bottom     = 4
     outer.top        = 4
