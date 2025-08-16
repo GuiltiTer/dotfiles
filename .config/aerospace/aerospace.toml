@@ -115,7 +115,7 @@ accordion-padding = 16
     alt-l = ['join-with right', 'layout v_accordion', 'mode main']
 
     alt-semicolon = ['layout accordion tiles    ', 'mode main']
-    alt-quote     = ['layout horizontal vertical', 'mode main']
+    semicolon     = ['layout horizontal vertical', 'mode main']
 
     t = ['layout tiles     horizontal vertical', 'mode main']
     a = ['layout accordion horizontal vertical', 'mode main']
