@@ -3,9 +3,9 @@ font-family = JetBrains Mono
 font-size = 16
 font-variation = wght=600
 
-macos-titlebar-style = hidden
-window-decoration = true
-
 window-padding-balance = true
-
+copy-on-select = clipboard
 adjust-cursor-thickness = 3
+quit-after-last-window-closed = true
+
+macos-titlebar-style = hidden
