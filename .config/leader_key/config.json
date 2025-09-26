@@ -1,39 +1,18 @@
 {
   "actions" : [
     {
-      "actions" : [
-        {
-          "key" : "t",
-          "type" : "application",
-          "value" : "/Applications/Telegram Desktop.app"
-        },
-        {
-          "key" : "M",
-          "type" : "application",
-          "value" : "/System/Applications/Music.app"
-        },
-        {
-          "key" : "m",
-          "type" : "application",
-          "value" : "/System/Applications/Messages.app"
-        }
-      ],
-      "key" : "m",
-      "label" : "Media",
-      "type" : "group"
+      "key" : "a",
+      "label" : "Actions",
+      "type" : "url",
+      "value" : "raycast://extensions/raycast/navigation/search-menu-items"
+    },
+    {
+      "key" : "b",
+      "type" : "application",
+      "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
     },
     {
       "actions" : [
-        {
-          "key" : "s",
-          "type" : "application",
-          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-        },
-        {
-          "key" : "z",
-          "type" : "application",
-          "value" : "/Applications/Zen Browser.app"
-        },
         {
           "key" : "c",
           "type" : "application",
@@ -56,11 +35,27 @@
           "key" : "l",
           "label" : "Link",
           "type" : "group"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key" : "z",
+          "type" : "application",
+          "value" : "/Applications/Zen Browser.app"
         }
       ],
-      "key" : "b",
+      "key" : "B",
       "label" : "Browser",
       "type" : "group"
+    },
+    {
+      "key" : "e",
+      "label" : "Emoji",
+      "type" : "url",
+      "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
     },
     {
       "actions" : [
@@ -70,15 +65,15 @@
           "value" : "/Users/guiltiter/Downloads"
         },
         {
-          "key" : "u",
-          "type" : "folder",
-          "value" : "/Users/guiltiter"
-        },
-        {
           "key" : "f",
           "label" : "Find Files",
           "type" : "url",
           "value" : "raycast://extensions/raycast/file-search/search-files"
+        },
+        {
+          "key" : "u",
+          "type" : "folder",
+          "value" : "/Users/guiltiter"
         }
       ],
       "key" : "f",
@@ -86,7 +81,62 @@
       "type" : "group"
     },
     {
+      "key" : "k",
+      "label" : "Kill",
+      "type" : "url",
+      "value" : "raycast://extensions/rolandleth/kill-process/index"
+    },
+    {
       "actions" : [
+        {
+          "key" : "M",
+          "type" : "application",
+          "value" : "/System/Applications/Music.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/Telegram Desktop.app"
+        }
+      ],
+      "key" : "m",
+      "label" : "Media",
+      "type" : "group"
+    },
+    {
+      "key" : "M",
+      "label" : "Menu Items",
+      "type" : "url",
+      "value" : "raycast://extensions/raycast/navigation/search-menu-items"
+    },
+    {
+      "key" : "s",
+      "label" : "Raycast",
+      "type" : "application",
+      "value" : "/Applications/Raycast.app"
+    },
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "key" : "v",
+      "type" : "application",
+      "value" : "/Applications/Streisand.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "h",
+          "type" : "application",
+          "value" : "/Applications/Hiddify.app"
+        },
         {
           "key" : "o",
           "type" : "application",
@@ -102,57 +152,11 @@
           "label" : "VPN List",
           "type" : "url",
           "value" : "raycast://extensions/rasmusbe/connect-to-vpn/index"
-        },
-        {
-          "key" : "h",
-          "type" : "application",
-          "value" : "/Applications/Hiddify.app"
         }
       ],
-      "key" : "v",
+      "key" : "V",
       "label" : "Utils",
       "type" : "group"
-    },
-    {
-      "key" : "t",
-      "type" : "application",
-      "value" : "/Applications/Ghostty.app"
-    },
-    {
-      "key" : "e",
-      "label" : "Emoji",
-      "type" : "url",
-      "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-    },
-    {
-      "key" : "s",
-      "label" : "Raycast",
-      "type" : "application",
-      "value" : "/Applications/Raycast.app"
-    },
-    {
-      "key" : "a",
-      "label" : "Actions",
-      "type" : "url",
-      "value" : "raycast://extensions/raycast/navigation/search-menu-items"
-    },
-    {
-      "key" : "M",
-      "label" : "Menu Items",
-      "type" : "url",
-      "value" : "raycast://extensions/raycast/navigation/search-menu-items"
-    },
-    {
-      "key" : "k",
-      "label" : "Kill",
-      "type" : "url",
-      "value" : "raycast://extensions/rolandleth/kill-process/index"
-    },
-    {
-      "key" : " ",
-      "label" : "Switcher",
-      "type" : "url",
-      "value" : "raycast://extensions/limonkufu/aerospace/switchApps?arguments=%7B%22workspace%22%3A%22all%22%7D"
     }
   ],
   "type" : "group"
