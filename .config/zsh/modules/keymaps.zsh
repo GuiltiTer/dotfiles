@@ -12,3 +12,8 @@ function _bindkey() {
 
 _bindkey "^O" "yazi"
 _bindkey "^G" "cd"
+
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey '^E' edit-command-line
+bindkey -M vicmd '^E' edit-command-line
