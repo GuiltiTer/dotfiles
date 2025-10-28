@@ -207,5 +207,5 @@ accordion-padding = 16
     run       = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
-    if.app-id = 'com.effect.streisand'
-    run       = 'move-node-to-workspace 1'
+    if.app-name-regex-substring = '.*'
+    run                         = 'move-node-to-workspace 1'
