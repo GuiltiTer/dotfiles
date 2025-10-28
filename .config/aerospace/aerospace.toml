@@ -133,6 +133,12 @@ accordion-padding = 16
         'mode main',
     ]
 
+    y = ['summon-workspace 1', 'mode main']
+    u = ['summon-workspace 2', 'mode main']
+    i = ['summon-workspace 3', 'mode main']
+    o = ['summon-workspace 4', 'mode main']
+    p = ['summon-workspace 5', 'mode main']
+
 [mode.resize.binding]
     esc = 'mode main'
 
