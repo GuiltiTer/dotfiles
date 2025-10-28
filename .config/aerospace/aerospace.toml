@@ -34,17 +34,6 @@ accordion-padding = 16
     alt-k = 'focus up    --boundaries-action wrap-around-the-workspace'
     alt-l = 'focus right --boundaries-action wrap-around-the-workspace'
 
-    # alt-1 = 'focus --dfs-index 0'
-    # alt-2 = 'focus --dfs-index 1'
-    # alt-3 = 'focus --dfs-index 2'
-    # alt-4 = 'focus --dfs-index 3'
-    # alt-5 = 'focus --dfs-index 4'
-    # alt-6 = 'focus --dfs-index 5'
-    # alt-7 = 'focus --dfs-index 6'
-    # alt-8 = 'focus --dfs-index 7'
-    # alt-9 = 'focus --dfs-index 8'
-    # alt-0 = 'focus --dfs-index 9'
-
     alt-shift-h = 'swap left'
     alt-shift-j = 'swap down'
     alt-shift-k = 'swap up'
@@ -83,13 +72,7 @@ accordion-padding = 16
 
     alt-enter = 'fullscreen --no-outer-gaps'
 
-    alt-n = 'workspace-back-and-forth'
-
-    alt-slash = '''exec-and-forget
-        aerospace focus right --boundaries-action wrap-around-the-workspace &&
-        aerospace focus up    --boundaries-action wrap-around-the-workspace &&
-        aerospace focus left  --boundaries-action wrap-around-the-workspace
-    '''
+    alt-slash = 'workspace-back-and-forth'
 
     alt-semicolon = 'mode manage'
     alt-m         = 'mode display'
@@ -110,11 +93,6 @@ accordion-padding = 16
     k = ['join-with up   ', 'mode main']
     l = ['join-with right', 'mode main']
 
-    alt-h = ['join-with left ', 'layout v_accordion', 'mode main']
-    alt-j = ['join-with down ', 'layout v_accordion', 'mode main']
-    alt-k = ['join-with up   ', 'layout v_accordion', 'mode main']
-    alt-l = ['join-with right', 'layout v_accordion', 'mode main']
-
     alt-semicolon = ['layout accordion tiles    ', 'mode main']
     semicolon     = ['layout horizontal vertical', 'mode main']
 
@@ -122,6 +100,9 @@ accordion-padding = 16
     a = ['layout accordion horizontal vertical', 'mode main']
 
     b = ['balance-sizes', 'mode main']
+
+    q = ['close-all-windows-but-current', 'mode main']
+
 
 [mode.display.binding]
     esc = 'mode main'
