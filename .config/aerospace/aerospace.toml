@@ -199,13 +199,13 @@ accordion-padding = 16
     run       = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
+    if.app-id = 'ru.keepcoder.Telegram'
+    run       = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
     if.app-id = 'com.apple.MobileSMS'
     run       = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
     if.app-id = 'com.effect.streisand'
     run       = 'move-node-to-workspace 1'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.finder'
-    run       = 'layout floating'
