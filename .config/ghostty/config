@@ -9,3 +9,9 @@ adjust-cursor-thickness = 3
 quit-after-last-window-closed = true
 
 macos-titlebar-style = hidden
+
+keybind = super+j=scroll_page_lines:1
+keybind = super+k=scroll_page_lines:-1
+
+keybind = super+u=scroll_page_up
+keybind = super+d=scroll_page_down
