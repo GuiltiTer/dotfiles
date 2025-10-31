@@ -15,3 +15,6 @@ keybind = super+k=scroll_page_lines:-1
 
 keybind = super+u=scroll_page_up
 keybind = super+d=scroll_page_down
+
+custom-shader-animation = always
+custom-shader = shaders/cursor_warp.glsl
