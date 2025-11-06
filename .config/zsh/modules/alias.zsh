@@ -1,6 +1,4 @@
 alias q=exit
-alias a=touch
-alias A=mkdir
 alias y=yazi
 alias c=clear
 
@@ -9,10 +7,6 @@ alias la='eza -F -alh --icons --git --group-directories-first'
 alias l='eza -F -lh --icons --git --group-directories-first'
 
 alias v=nvim
-alias vi=nvim
-alias vim=nvim
-alias vide=neovide
-alias lzd=lazydocker
 alias lzg=lazygit
 alias cat=bat
 
