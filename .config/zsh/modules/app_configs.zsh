@@ -1,10 +1,10 @@
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-#mise
+# mise
 eval "$(mise activate zsh)"
 
-#zoxide
+# zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
 # opam
