@@ -55,7 +55,6 @@ zmodule zsh-users/zsh-autosuggestions
 # }}} End configuration added by Zim install
 
 
-zmodule magic-enter
 zmodule sindresorhus/pure --source async.zsh --source pure.zsh
 zmodule qoomon/zsh-lazyload
 zmodule johannchangpro/zsh-interactive-cd
