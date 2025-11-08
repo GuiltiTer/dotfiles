@@ -192,8 +192,3 @@ accordion-padding = 16
 [[on-window-detected]]
     if.app-id = 'com.apple.MobileSMS'
     run       = 'move-node-to-workspace 5'
-
-
-[[on-window-detected]]
-    if.app-name-regex-substring = '^(?!(Finder|Passwords)).*'
-    run                         = 'move-node-to-workspace 1'
