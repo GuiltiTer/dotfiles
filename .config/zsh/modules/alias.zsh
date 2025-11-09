@@ -1,5 +1,5 @@
 alias q=exit
-alias y=yazi
+alias y=yazi_keep_cwd
 alias c=clear
 
 alias ls='eza -F --group-directories-first'
