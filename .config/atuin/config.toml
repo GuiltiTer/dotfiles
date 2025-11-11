@@ -1,0 +1,11 @@
+enter_accept = false
+invert = true
+inline_height = 20
+show_help = false
+show_preview = false
+show_tabs = false
+command_chaining = true
+keymap_mode = "vim-normal"
+
+[keys]
+scroll_exits = false

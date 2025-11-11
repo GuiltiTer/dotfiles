@@ -19,8 +19,8 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 # direnv
 eval "$(direnv hook zsh)"
 
-# fzf
-source <(fzf --zsh)
+# atuin
+eval "$(atuin init zsh --disable-up-arrow)"
 
 # conda
 lazyload conda -- 'conda_init'
