@@ -1,0 +1,33 @@
+[
+  {
+    "bindings": {}
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting",
+    "bindings": {}
+  },
+  {
+    // mode = {n, v}
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {}
+  },
+  {
+    "context": "Dock || Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {}
+  },
+  {
+    // mode = n
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {}
+  },
+  {
+    // mode = v
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {}
+  },
+  {
+    // mode = i
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {}
+  }
+]

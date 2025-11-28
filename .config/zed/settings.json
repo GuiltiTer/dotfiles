@@ -1,0 +1,65 @@
+{
+	"show_edit_predictions": true,
+	"disable_ai": true,
+	"outline_panel": {
+		"button": true
+	},
+	"tabs": {
+		"git_status": false
+	},
+	"debugger": {
+		"button": true
+	},
+	"search": {
+		"button": true
+	},
+	"diagnostics": {
+		"button": true
+	},
+	"terminal": {
+		"shell": "system",
+		"button": true
+	},
+	"status_bar": {
+		"cursor_position_button": true,
+		"active_language_button": true
+	},
+	"project_panel": {
+		"hide_root": false,
+		"folder_icons": true,
+		"file_icons": true,
+		"entry_spacing": "comfortable",
+		"button": true
+	},
+	"title_bar": {
+		"show_user_picture": false,
+		"show_menus": false,
+		"show_sign_in": true,
+		"show_project_items": true,
+		"show_branch_icon": false
+	},
+	"minimap": {},
+	"show_signature_help_after_edits": true,
+	"sticky_scroll": {
+		"enabled": true
+	},
+	"autosave": "on_focus_change",
+	"auto_signature_help": false,
+	"base_keymap": "JetBrains",
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"vim_mode": true,
+	"theme": "Tokyo Night",
+	"tab_bar": { "show": false },
+	"buffer_font_family": "JetBrains Mono",
+	"ui_font_size": 15.0,
+	"buffer_font_size": 16,
+	"toolbar": {
+		"agent_review": false,
+		"selections_menu": false,
+		"breadcrumbs": false,
+		"quick_actions": false
+	}
+}
