@@ -11,13 +11,15 @@
 
 # All possible modifiers: cmd, alt, ctrl, shift
 
+config-version = 2
+
 start-at-login                     = true
 default-root-container-layout      = 'accordion'
 default-root-container-orientation = 'auto'
 key-mapping.preset                 = 'qwerty'
 on-focused-monitor-changed         = ['move-mouse monitor-lazy-center']
 
-accordion-padding = 16
+accordion-padding = 32
 
 [gaps]
     inner.horizontal = 4
@@ -54,29 +56,29 @@ accordion-padding = 16
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
 
-    alt-shift-y = ['move-node-to-workspace 1', 'workspace 1', 'mode main']
-    alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1', 'mode main']
-    alt-shift-u = ['move-node-to-workspace 2', 'workspace 2', 'mode main']
-    alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2', 'mode main']
-    alt-shift-i = ['move-node-to-workspace 3', 'workspace 3', 'mode main']
-    alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3', 'mode main']
-    alt-shift-o = ['move-node-to-workspace 4', 'workspace 4', 'mode main']
-    alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4', 'mode main']
-    alt-shift-p = ['move-node-to-workspace 5', 'workspace 5', 'mode main']
-    alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5', 'mode main']
-    alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6', 'mode main']
-    alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7', 'mode main']
-    alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8', 'mode main']
-    alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9', 'mode main']
+    alt-shift-y = ['move-node-to-workspace 1', 'workspace 1']
+    alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
+    alt-shift-u = ['move-node-to-workspace 2', 'workspace 2']
+    alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
+    alt-shift-i = ['move-node-to-workspace 3', 'workspace 3']
+    alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
+    alt-shift-o = ['move-node-to-workspace 4', 'workspace 4']
+    alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
+    alt-shift-p = ['move-node-to-workspace 5', 'workspace 5']
+    alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+    alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+    alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
+    alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
+    alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
 
 
     alt-enter = 'fullscreen --no-outer-gaps'
 
-    alt-slash = 'workspace-back-and-forth'
 
     alt-semicolon = 'mode manage'
     alt-m         = 'mode display'
     alt-r         = 'mode resize'
+    alt-slash     = 'mode workspace'
 
 [mode.manage.binding]
 
@@ -152,6 +154,62 @@ accordion-padding = 16
     j = 'resize height -50'
     k = 'resize height +50'
 
+[mode.workspace.binding]
+    esc = 'mode main'
+
+    alt-a = ['workspace A', 'mode main']
+    alt-b = ['workspace B', 'mode main']
+    alt-c = ['workspace C', 'mode main']
+    alt-d = ['workspace D', 'mode main']
+    alt-e = ['workspace E', 'mode main']
+    alt-f = ['workspace F', 'mode main']
+    alt-g = ['workspace G', 'mode main']
+    alt-h = ['workspace H', 'mode main']
+    alt-i = ['workspace I', 'mode main']
+    alt-j = ['workspace J', 'mode main']
+    alt-k = ['workspace K', 'mode main']
+    alt-l = ['workspace L', 'mode main']
+    alt-m = ['workspace M', 'mode main']
+    alt-n = ['workspace N', 'mode main']
+    alt-o = ['workspace O', 'mode main']
+    alt-p = ['workspace P', 'mode main']
+    alt-q = ['workspace Q', 'mode main']
+    alt-r = ['workspace R', 'mode main']
+    alt-s = ['workspace S', 'mode main']
+    alt-t = ['workspace T', 'mode main']
+    alt-u = ['workspace U', 'mode main']
+    alt-v = ['workspace V', 'mode main']
+    alt-w = ['workspace W', 'mode main']
+    alt-x = ['workspace X', 'mode main']
+    alt-y = ['workspace Y', 'mode main']
+    alt-z = ['workspace Z', 'mode main']
+
+    alt-shift-a = ['move-node-to-workspace A', 'workspace A', 'mode main']
+    alt-shift-b = ['move-node-to-workspace B', 'workspace B', 'mode main']
+    alt-shift-c = ['move-node-to-workspace C', 'workspace C', 'mode main']
+    alt-shift-d = ['move-node-to-workspace D', 'workspace D', 'mode main']
+    alt-shift-e = ['move-node-to-workspace E', 'workspace E', 'mode main']
+    alt-shift-f = ['move-node-to-workspace F', 'workspace F', 'mode main']
+    alt-shift-g = ['move-node-to-workspace G', 'workspace G', 'mode main']
+    alt-shift-h = ['move-node-to-workspace H', 'workspace H', 'mode main']
+    alt-shift-i = ['move-node-to-workspace I', 'workspace I', 'mode main']
+    alt-shift-j = ['move-node-to-workspace J', 'workspace J', 'mode main']
+    alt-shift-k = ['move-node-to-workspace K', 'workspace K', 'mode main']
+    alt-shift-l = ['move-node-to-workspace L', 'workspace L', 'mode main']
+    alt-shift-m = ['move-node-to-workspace M', 'workspace M', 'mode main']
+    alt-shift-n = ['move-node-to-workspace N', 'workspace N', 'mode main']
+    alt-shift-o = ['move-node-to-workspace O', 'workspace O', 'mode main']
+    alt-shift-p = ['move-node-to-workspace P', 'workspace P', 'mode main']
+    alt-shift-q = ['move-node-to-workspace Q', 'workspace Q', 'mode main']
+    alt-shift-r = ['move-node-to-workspace R', 'workspace R', 'mode main']
+    alt-shift-s = ['move-node-to-workspace S', 'workspace S', 'mode main']
+    alt-shift-t = ['move-node-to-workspace T', 'workspace T', 'mode main']
+    alt-shift-u = ['move-node-to-workspace U', 'workspace U', 'mode main']
+    alt-shift-v = ['move-node-to-workspace V', 'workspace V', 'mode main']
+    alt-shift-w = ['move-node-to-workspace W', 'workspace W', 'mode main']
+    alt-shift-x = ['move-node-to-workspace X', 'workspace X', 'mode main']
+    alt-shift-y = ['move-node-to-workspace Y', 'workspace Y', 'mode main']
+    alt-shift-z = ['move-node-to-workspace Z', 'workspace Z', 'mode main']
 
 [[on-window-detected]]
     if.app-id = 'com.mitchellh.ghostty'
