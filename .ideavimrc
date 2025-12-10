@@ -1,0 +1,111 @@
+"opts
+let mapleader=" "
+set scrolloff=16
+set incsearch
+set ignorecase smartcase
+set clip
+set clipboard=unnamedplus,unnamed,ideaput
+set ideajoin
+
+"keymaps
+map Q gq
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+
+nmap <S-h> ^
+vmap <S-h> ^
+nmap <S-l> $
+vmap <S-l> $
+
+nmap <C-y> "zy
+vmap <C-y> "zy
+xmap <C-y> "zy
+nmap <C-p> "zp
+vmap <C-p> "zp
+xmap <C-p> "zp
+
+nmap <leader>w :wa<cr>
+nmap <leader>Q <Action>(CloseAllEditors)
+nmap <leader>q <Action>(CloseContent)
+nmap <leader>uz <Action>(ToggleZenMode)
+nmap <Leader><Bs> <Action>(HideAllWindows)
+nmap <leader>O <Action>(RevealIn)
+
+nmap <leader>/ <Action>(CommentByLineComment>
+xmap <leader>/ <Action>(CommentByLineComment>
+nmap gd <Action>(GotoDeclaration)
+imap <C-s> <Action>(ParameterInfo)
+nmap gp <Action>(QuickImplementations)
+nmap gl <Action>(ShowHoverInfo)
+nmap gs <Action>(FileStructurePopup)
+nmap <leader>i <Action>(ShowIntentionActions)
+nmap <leader>R <Action>(Refactorings.QuickListPopupAction)
+xmap <leader>R <Action>(Refactorings.QuickListPopupAction)
+nmap <S-tab> <Action>(RecentFiles)
+nmap mb <Action>(ActivateProjectToolWindow)
+
+nmap <leader>fe <Action>(SearchEverywhere)
+nmap <leader>fw <Action>(FindInPath)
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fs <Action>(GotoSymbol)
+nmap <leader>fr <Action>(ReplaceInPath)
+nmap <leader>o <Action>(ShowNavBar)
+nmap <leader><S-w> <Action>(EditSourceInNewWindow)
+nmap gi <Action>(NextTab)
+nmap go <Action>(PreviousTab)
+
+nmap <leader>G <Action>(ActivateProjectToolWindow)
+nmap <leader>gg <Action>(ActivateCommitToolWindow)
+nmap <leader>gR <Action>(ChangesView.Revert)
+nmap <leader>gr <Action>(Vcs.RollbackChangedLines)
+nmap <leader>gp <Action>(Vcs.Push)
+nmap ]g <Action>(VcsShowNextChangeMarker)
+nmap [g <Action>(VcsShowPrevChangeMarker)
+
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+nmap <leader>ls <Action>(FileStructurePopup)
+nmap <leader>lf <Action>(ReformatCode)
+nmap <leader>la <Action>(ShowIntentionActions)
+nmap <leader>lr <Action>(RenameElement)
+
+nmap <leader>;b <Action>(CidrBuildRunToolbar)
+nmap <leader>;r <Action>(Run)
+nmap <leader>;d <Action>(Debug)
+nmap <leader>;R <Action>(CMake.ReloadCMakeProject)
+
+
+"plugins
+Plug 'machakann/vim-highlightedyank'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+set multicursor
+
+Plug 'preservim/nerdtree'
+let g:NERDTreeMapQuit = "q"
+let g:NERDTreeMapPreview = "P"
+let g:NERDTreeMapCloseDir = "h"
+let g:NERDTreeMapActivateNode = "l"
+let g:NERDTreeMapOpenVSplit = "v"
+let g:NERDTreeMapOpenSplit = "s"
+nmap <leader>e :NERDTreeFocus<cr>
+
+"Harpoon
+nmap mm <Action>(HarpoonerToggleQuickMenu)
+nmap ma <Action>(HarpoonerAddFile)
+nmap mD <Action>(HarpoonerClearMenu)
+nmap mn <Action>(HarpoonerNextFileAction)
+nmap mp <Action>(HarpoonerPreviousFileAction)
+nmap m1 <Action>(HarpoonerOpenFile1)
+nmap m2 <Action>(HarpoonerOpenFile2)
+nmap m3 <Action>(HarpoonerOpenFile3)
+nmap m4 <Action>(HarpoonerOpenFile4)
+nmap m5 <Action>(HarpoonerOpenFile5)
+nmap m6 <Action>(HarpoonerOpenFile6)
+
+set which-key
+set notimeout
+let g:WhichKey_DefaultDelay = 600
+let g:WhichKey_ShowVimActions = 'true'
