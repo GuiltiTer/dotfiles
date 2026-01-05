@@ -248,20 +248,20 @@ accordion-padding = 32
     8 = 'workspace 8'
     9 = 'workspace 9'
 
-    shift-y = ['move-node-to-workspace 1', 'workspace 1']
-    shift-1 = ['move-node-to-workspace 1', 'workspace 1']
-    shift-u = ['move-node-to-workspace 2', 'workspace 2']
-    shift-2 = ['move-node-to-workspace 2', 'workspace 2']
-    shift-i = ['move-node-to-workspace 3', 'workspace 3']
-    shift-3 = ['move-node-to-workspace 3', 'workspace 3']
-    shift-o = ['move-node-to-workspace 4', 'workspace 4']
-    shift-4 = ['move-node-to-workspace 4', 'workspace 4']
-    shift-p = ['move-node-to-workspace 5', 'workspace 5']
-    shift-5 = ['move-node-to-workspace 5', 'workspace 5']
-    shift-6 = ['move-node-to-workspace 6', 'workspace 6']
-    shift-7 = ['move-node-to-workspace 7', 'workspace 7']
-    shift-8 = ['move-node-to-workspace 8', 'workspace 8']
-    shift-9 = ['move-node-to-workspace 9', 'workspace 9']
+    shift-y = 'move-node-to-workspace 1'
+    shift-1 = 'move-node-to-workspace 1'
+    shift-u = 'move-node-to-workspace 2'
+    shift-2 = 'move-node-to-workspace 2'
+    shift-i = 'move-node-to-workspace 3'
+    shift-3 = 'move-node-to-workspace 3'
+    shift-o = 'move-node-to-workspace 4'
+    shift-4 = 'move-node-to-workspace 4'
+    shift-p = 'move-node-to-workspace 5'
+    shift-5 = 'move-node-to-workspace 5'
+    shift-6 = 'move-node-to-workspace 6'
+    shift-7 = 'move-node-to-workspace 7'
+    shift-8 = 'move-node-to-workspace 8'
+    shift-9 = 'move-node-to-workspace 9'
 
 
 [[on-window-detected]]
