@@ -22,9 +22,6 @@ eval "$(direnv hook zsh)"
 # atuin
 eval "$(atuin init zsh --disable-up-arrow)"
 
-# conda
-lazyload conda -- 'conda_init'
-
 # go
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"

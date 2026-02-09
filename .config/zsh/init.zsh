@@ -4,7 +4,6 @@ local configs=(
 	"zim"
 	"alias"
 	"app_configs"
-	"conda"
 	"functions"
 	"entr"
 	"keymaps"
