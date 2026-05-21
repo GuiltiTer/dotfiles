@@ -5,6 +5,7 @@ local configs=(
 	"alias"
 	"app_configs"
 	"functions"
+	"prox"
 	"entr"
 	"keymaps"
 )
