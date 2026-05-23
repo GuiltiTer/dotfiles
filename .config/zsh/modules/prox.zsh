@@ -1,6 +1,6 @@
 PROX_DIR="$HOME/.config/proxies"
 
-function prox_set() {
+function proxset() {
     local name="$1"
 
     if [[ -z "$name" ]]; then
@@ -26,7 +26,7 @@ function prox_set() {
     print "$name -> $server"
 }
 
-function prox_unset() {
+function proxunset() {
     unset HTTP_PROXY HTTPS_PROXY ALL_PROXY
     unset http_proxy https_proxy all_proxy
     unset CURRENT_PROXY
@@ -34,13 +34,13 @@ function prox_unset() {
     print "Proxy disabled"
 }
 
-function prox_list() {
+function proxlist() {
     for file in "$PROX_DIR"/*(N.); do
       print "${file:t} -> $(<$file)"
     done
 }
 
-function prox_status() {
+function proxstatus() {
     if [[ -n "$CURRENT_PROXY" ]]; then
         print "$CURRENT_PROXY -> "$HTTP_PROXY""
     else
@@ -48,7 +48,7 @@ function prox_status() {
     fi
 }
 
-function prox_pick() {
+function proxpick() {
     choice=$(
         for file in "$PROX_DIR"/*(N.); do
             print "${file:t} -> $(<$file)"
@@ -58,6 +58,6 @@ function prox_pick() {
     local profile="${choice%% *}"  # get the first word
 
     if [ -n "$profile" ]; then
-        prox_set "$profile"
+        proxset "$profile"
     fi
 }
