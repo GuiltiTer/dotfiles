@@ -74,4 +74,9 @@
     "breadcrumbs": false,
     "quick_actions": false,
   },
+  "languages": {
+    "Python": {
+      "language_servers": ["ty", "ruff"],
+    },
+  },
 }
