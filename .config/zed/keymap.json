@@ -4,35 +4,50 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
-    "context": "Editor && vim_mode == normal && !VimWaiting",
-    "bindings": {}
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::Cut",
+      "q": "project_panel::Toggle",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "r": "project_panel::Rename",
+    },
+  },
+  {
+    "context": "(Editor && vim_mode == normal && !VimWaiting) || EmptyPane || SharedScreen",
+    "bindings": {
+      "space g g": "git_panel::Toggle",
+      "space f f": "file_finder::Toggle",
+      "space e": "project_panel::Toggle",
+    },
   },
   {
     // mode = {n, v}
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-    "bindings": {}
+    "bindings": {},
   },
   {
     "context": "Dock || Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {}
+    "bindings": {},
   },
   {
     // mode = n
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {}
+    "bindings": {},
   },
   {
     // mode = v
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
-    "bindings": {}
+    "bindings": {},
   },
   {
     // mode = i
     "context": "Editor && vim_mode == insert && !menu",
-    "bindings": {}
-  }
+    "bindings": {},
+  },
 ]
