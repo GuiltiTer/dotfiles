@@ -9,3 +9,6 @@ keymap_mode = "vim-normal"
 
 [keys]
 scroll_exits = false
+
+[ai]
+enabled = true

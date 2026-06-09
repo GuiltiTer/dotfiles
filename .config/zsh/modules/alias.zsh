@@ -17,3 +17,6 @@ alias upgrade='topgrade --only brew_cask brew_formula custom_commands go pipx ca
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'
+
+alias os='query_to_opencode_server'
+alias om='select_opencode_model'
