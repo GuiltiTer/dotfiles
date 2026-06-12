@@ -99,6 +99,6 @@
 )
 
 (deflayermap (l2)
-  h C-tab
-  l C-S-tab
+  h C-S-tab
+  l C-tab
 )
