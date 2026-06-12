@@ -1,3 +1,8 @@
 [tools]
 node = "lts"
 ruby = "latest"
+
+[settings]
+
+[settings.ruby]
+compile = false
