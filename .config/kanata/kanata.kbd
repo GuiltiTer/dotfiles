@@ -4,6 +4,33 @@
   concurrent-tap-hold yes
 )
 
+(platform (macos)
+  (defalias
+    f1 brdn
+    f2 brup
+    f7 prev
+    f8 pp
+    f9 next
+    f10 mute
+    f11 vold
+    f12 volu
+  )
+)
+
+(platform (linux win winiov2 wintercept)
+  (defalias
+    f1 f1
+    f2 f2
+    f7 f7
+    f8 f8
+    f9 f6
+    f10 f10
+    f11 f11
+    f12 f12
+  )
+)
+
+
 (defsrc
   esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12
   
@@ -48,6 +75,15 @@
   ret @ret
   lsft @lsft
   rmet @rmet
+  
+  f1 @f1
+  f2 @f2
+  f7 @f7
+  f8 @f8
+  f9 @f9
+  f10 @f10
+  f11 @f11
+  f12 @f12
 )
 
 
