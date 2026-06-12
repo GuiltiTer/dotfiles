@@ -115,12 +115,6 @@
       "value" : "raycast://extensions/raycast/navigation/search-menu-items"
     },
     {
-      "key" : "s",
-      "label" : "Raycast",
-      "type" : "application",
-      "value" : "/Applications/Raycast.app"
-    },
-    {
       "key" : "t",
       "type" : "application",
       "value" : "/Applications/Ghostty.app"
