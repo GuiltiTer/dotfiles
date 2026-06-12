@@ -4,6 +4,15 @@
   concurrent-tap-hold yes
 )
 
+(defsrc
+  esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12
+  grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc
+  tab  q   w   e   r   t   y   u   i   o   p    [    ]    \
+  caps a   s   d   f   g   h   j   k   l   ;    '         ret
+  lsft z   x   c   v   b   n   m   ,   .   /        up    rsft
+  fn lctl lalt lmet    spc    rmet ralt rctl  left down right 
+)
+
 (platform (macos)
   (defalias
     f1 brdn
@@ -30,34 +39,22 @@
   )
 )
 
-
-(defsrc
-  esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12
-  grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc
-  tab  q   w   e   r   t   y   u   i   o   p    [    ]    \
-  caps a   s   d   f   g   h   j   k   l   ;    '         ret
-  lsft z   x   c   v   b   n   m   ,   .   /        up    rsft
-  fn lctl lalt lmet    spc    rmet ralt rctl  left down right 
-)
-
-(defchordsv2
-  (rsft caps) caps 200 all-released ()
-)
-
-
 (defalias
   lh1 (layer-while-held l1)
   lh2 (layer-while-held l2)
 )
-
 
 (defalias
   caps (tap-hold 150 150 esc @lh1)
   ret (tap-hold 150 150 ret @lh1)
   tab (tap-hold 150 150 tab @lh2)
   rmet (tap-hold-press 0 150 RM-RC-RA-RS-spc rmet)
-  lsft (tap-hold-press 0 150 bspc lsft)
+  lsft (tap-hold-press 0 150 caps lsft)
   rsft (tap-hold-press 0 150 caps rsft)
+)
+
+(defchordsv2
+  (rsft caps) caps 200 all-released ()
 )
 
 (deflayermap (base)
@@ -83,7 +80,6 @@
   f12 @f12
 )
 
-
 (deflayermap (l1)
   h left
   j down
@@ -96,9 +92,7 @@
   esc lrld 
 )
 
-(defalias next-tab C-tab)
-(defalias prev-tab C-S-tab)
 (deflayermap (l2)
-  h @prev-tab
-  l @next-tab
+  h C-tab
+  l C-S-tab
 )
