@@ -57,6 +57,7 @@
   tab (tap-hold 150 150 tab @lh2)
   rmet (tap-hold-press 0 150 RM-RC-RA-RS-spc rmet)
   lsft (tap-hold-press 0 150 bspc lsft)
+  rsft (tap-hold-press 0 150 caps rsft)
 )
 
 (deflayermap (base)
@@ -69,6 +70,7 @@
   caps @caps
   ret @ret
   lsft @lsft
+  rsft @rsft
   rmet @rmet
   
   f1 @f1
