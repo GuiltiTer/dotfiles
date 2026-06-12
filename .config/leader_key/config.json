@@ -94,6 +94,16 @@
       "key" : "t",
       "type" : "application",
       "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "key" : "s",
+      "type" : "url",
+      "value" : "raycast-x://extensions/raycast/navigation/switch-windows"
+    },
+    {
+      "key" : "o",
+      "type" : "application",
+      "value" : "/System/Applications/Mission Control.app"
     }
   ],
   "type" : "group"
