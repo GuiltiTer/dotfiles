@@ -7,7 +7,6 @@ local configs=(
 	"functions"
 	"opencode"
 	"prox"
-	"entr"
 	"keymaps"
 )
 
