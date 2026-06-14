@@ -31,7 +31,6 @@ export PATH="$PATH:/Users/guiltiter/Library/Application Support/JetBrains/Toolbo
 
 # carapce
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
 
 # local bin

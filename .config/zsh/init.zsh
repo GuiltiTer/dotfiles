@@ -1,16 +1,19 @@
-local configs=(
-	"env"
-	"ui"
-	"zim"
-	"alias"
-	"app_configs"
-	"functions"
-	"opencode"
-	"prox"
-	"keymaps"
-)
+local ZSH_CONFIG=$(dirname "$0")
+source $ZSH_CONFIG/bootstrap.zsh
 
-local modules_path=$(dirname "$0")/modules
-for c in $configs; do
-	source "$modules_path/$c.zsh"
-done
+zinit wait lucid light-mode for zimfw/environment
+zinit wait lucid light-mode for Aloxaf/fzf-tab
+zinit wait lucid light-mode for zsh-users/zsh-history-substring-search
+zinit wait lucid light-mode for hlissner/zsh-autopair
+zinit wait lucid light-mode for jeffreytse/zsh-vi-mode
+zinit wait lucid light-mode multisrc'env.zsh alias.zsh functions.zsh keymaps.zsh opencode.zsh prox.zsh styles.zsh' for $ZSH_CONFIG/modules
+
+zinit light-mode compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh' for sindresorhus/pure
+
+zinit blockf light-mode for zsh-users/zsh-completions
+autoload -Uz compinit && compinit
+zinit wait lucid light-mode for atload"_zsh_autosuggest_start" zsh-users/zsh-autosuggestions
+zinit wait lucid light-mode for zdharma-continuum/fast-syntax-highlighting
+
+zinit light qoomon/zsh-lazyload
+source $ZSH_CONFIG/modules/app_configs.zsh

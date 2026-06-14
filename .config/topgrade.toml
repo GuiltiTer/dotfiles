@@ -94,9 +94,8 @@
 
 # Custom commands
 [commands]
-"zimfw (upgrade)" = "source ~/.zshrc && zimfw upgrade"
-"zimfw (update)" = "source ~/.zshrc && zimfw update"
-"yazi" = "ya pkg upgrade"
+"zinit(self)" = "source ~/.zshrc && zinit self-update"
+"zinit(update)" = "source ~/.zshrc && zinit update --parallel"
 
 
 [python]
