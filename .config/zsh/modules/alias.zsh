@@ -24,5 +24,5 @@ alias om='select_opencode_model'
 
 alias -s json='jless'
 alias -s csv='csvlens'
-for e (zip rar dmg pdf) alias -s $e='openn'
+for e (zip rar dmg pdf) alias -s $e='open'
 for e (py cpp c++ c h go rs lua toml txt md) alias -s $e='$EDITOR'
