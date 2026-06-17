@@ -6,6 +6,7 @@ zinit wait lucid light-mode for Aloxaf/fzf-tab
 zinit wait lucid light-mode for zsh-users/zsh-history-substring-search
 zinit wait lucid light-mode for hlissner/zsh-autopair
 zinit wait lucid light-mode for jeffreytse/zsh-vi-mode
+zinit wait lucid light-mode for Tarrasch/zsh-bd
 zinit wait lucid light-mode multisrc'env.zsh alias.zsh functions.zsh keymaps.zsh opencode.zsh prox.zsh' for $ZSH_CONFIG/modules
 
 zinit light-mode compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh' for sindresorhus/pure
