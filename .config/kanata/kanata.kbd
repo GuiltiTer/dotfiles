@@ -53,7 +53,7 @@
   ret  (tap-hold-press 0 $hold-timeout ret @lh1)
   tab  (tap-hold-press 0 $hold-timeout tab @lh2)
   rmet (tap-hold-press 0 $hold-timeout RM-RC-RA-RS-spc rmet)
-  rsft (tap-hold-press 0 $hold-timeout caps rsft)
+  rsft (tap-hold-press 0 $hold-timeout (tap-dance 150 (rsft caps)) rsft)
 )
 
 (deflayermap (base)
