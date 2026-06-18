@@ -45,9 +45,9 @@
 )
 
 (defalias
-  caps (tap-hold 150 150 esc @lh1)
-  ret (tap-hold 150 150 ret @lh1)
-  tab (tap-hold 150 150 tab @lh2)
+  caps (tap-hold-press 0 150 esc @lh1)
+  ret (tap-hold-press 0 150 ret @lh1)
+  tab (tap-hold-press 0 150 tab @lh2)
   rmet (tap-hold-press 0 150 RM-RC-RA-RS-spc rmet)
   rsft (tap-hold-press 0 150 caps rsft)
 )
@@ -94,6 +94,11 @@
   i S-6
   o S-7
   p S-8
+  [ S-9
+  ] S-0
+  ; =
+  n -
+  m S--
   
   a 1
   s 2
