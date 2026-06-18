@@ -4,6 +4,10 @@
   concurrent-tap-hold yes
 )
 
+(defvar
+  hold-timeout 150
+)
+
 (defsrc
   esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc
@@ -15,11 +19,11 @@
 
 (platform (macos)
   (defalias
-    f1 brdn
-    f2 brup
-    f7 prev
-    f8 pp
-    f9 next
+    f1  brdn
+    f2  brup
+    f7  prev
+    f8  pp
+    f9  next
     f10 mute
     f11 vold
     f12 volu
@@ -28,11 +32,11 @@
 
 (platform (linux win winiov2 wintercept)
   (defalias
-    f1 f1
-    f2 f2
-    f7 f7
-    f8 f8
-    f9 f6
+    f1  f1
+    f2  f2
+    f7  f7
+    f8  f8
+    f9  f6
     f10 f10
     f11 f11
     f12 f12
@@ -45,15 +49,11 @@
 )
 
 (defalias
-  caps (tap-hold-press 0 150 esc @lh1)
-  ret (tap-hold-press 0 150 ret @lh1)
-  tab (tap-hold-press 0 150 tab @lh2)
-  rmet (tap-hold-press 0 150 RM-RC-RA-RS-spc rmet)
-  rsft (tap-hold-press 0 150 caps rsft)
-)
-
-(defchordsv2
-  (rsft caps) caps 200 all-released ()
+  caps (tap-hold-press 0 $hold-timeout esc @lh1)
+  ret  (tap-hold-press 0 $hold-timeout ret @lh1)
+  tab  (tap-hold-press 0 $hold-timeout tab @lh2)
+  rmet (tap-hold-press 0 $hold-timeout RM-RC-RA-RS-spc rmet)
+  rsft (tap-hold-press 0 $hold-timeout caps rsft)
 )
 
 (deflayermap (base)
@@ -62,17 +62,17 @@
   lalt lctl
   ralt rctl
 
-  tab @tab
+  tab  @tab
   caps @caps
-  ret @ret
+  ret  @ret
   rsft @rsft
   rmet @rmet
   
-  f1 @f1
-  f2 @f2
-  f7 @f7
-  f8 @f8
-  f9 @f9
+  f1  @f1
+  f2  @f2
+  f7  @f7
+  f8  @f8
+  f9  @f9
   f10 @f10
   f11 @f11
   f12 @f12
