@@ -83,7 +83,18 @@
   j down
   k up
   l right
-
+  
+  q S-1
+  w S-2
+  e S-3
+  r S-4
+  t XX
+  y XX
+  u S-5
+  i S-6
+  o S-7
+  p S-8
+  
   a 1
   s 2
   d 3
