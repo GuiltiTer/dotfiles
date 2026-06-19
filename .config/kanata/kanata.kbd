@@ -1,3 +1,5 @@
+;; docs: https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
 (defcfg
   process-unmapped-keys yes
   log-layer-changes no
