@@ -14,10 +14,12 @@
 config-version = 2
 
 start-at-login                     = true
+auto-reload-config                 = true
 default-root-container-layout      = 'accordion'
 default-root-container-orientation = 'auto'
 key-mapping.preset                 = 'qwerty'
 on-focused-monitor-changed         = ['move-mouse monitor-lazy-center']
+focus-follows-mouse.enabled        = true
 
 accordion-padding = 32
 
@@ -265,41 +267,37 @@ accordion-padding = 32
 
 
 [[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
-    run       = 'move-node-to-workspace 3'
+    if  = 'test %{app-bundle-id} = com.mitchellh.ghostty'
+    run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-    if.app-id = 'net.kovidgoyal.kitty'
-    run       = 'move-node-to-workspace 3'
+    if  = 'test %{app-bundle-id} = net.kovidgoyal.kitty'
+    run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-    if.app-id = 'com.github.wez.wezterm'
-    run       = 'move-node-to-workspace 3'
+    if  = 'test %{app-bundle-id} = com.github.wez.wezterm'
+    run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-    if.app-id = 'com.apple.Safari'
-    run       = 'move-node-to-workspace 2'
+    if  = 'test %{app-bundle-id} = com.apple.Safari'
+    run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-    if.app-id = 'com.openai.chat'
-    run       = 'move-node-to-workspace 2'
+    if  = 'test %{app-bundle-id} = com.openai.chat'
+    run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    run       = 'move-node-to-workspace 2'
+    if  = 'test %{app-bundle-id} = com.google.Chrome'
+    run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-    if.app-id = 'org.mozilla.firefox'
-    run       = 'move-node-to-workspace 2'
+    if  = 'test %{app-bundle-id} = com.tdesktop.Telegram'
+    run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
-    if.app-id = 'com.tdesktop.Telegram'
-    run       = 'move-node-to-workspace 5'
+    if  = 'test %{app-bundle-id} = ru.keepcoder.Telegram'
+    run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
-    if.app-id = 'ru.keepcoder.Telegram'
-    run       = 'move-node-to-workspace 5'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.MobileSMS'
-    run       = 'move-node-to-workspace 5'
+    if  = 'test %{app-bundle-id} = com.apple.MobileSMS'
+    run = 'move-node-to-workspace 5'
