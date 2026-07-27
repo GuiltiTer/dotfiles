@@ -1,6 +1,7 @@
 alias q=exit
 alias y=yazi_keep_cwd
 alias c=clear
+alias h=herdr
 
 alias ls='eza -F --group-directories-first'
 alias la='eza -F -alh --icons --git --group-directories-first'
