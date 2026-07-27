@@ -4,6 +4,7 @@
   process-unmapped-keys yes
   log-layer-changes no
   concurrent-tap-hold yes
+  macos-continue-if-no-devs-found yes
 )
 
 (defvar
