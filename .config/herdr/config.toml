@@ -1,0 +1,12 @@
+onboarding = false
+
+[theme]
+name = "tokyo-night"
+
+[terminal]
+new_cwd = "follow"
+
+[keys]
+next_tab = "ctrl+tab"
+previous_tab = "ctrl+shift+tab"
+switch_tab = "cmd+1..9"
