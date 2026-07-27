@@ -3,6 +3,8 @@ font-family = JetBrains Mono
 font-size = 16
 font-variation = wght=600
 
+shell-integration = detect
+mouse-hide-while-typing = true
 window-padding-balance = true
 copy-on-select = clipboard
 adjust-cursor-thickness = 3
