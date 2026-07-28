@@ -2,6 +2,7 @@ alias q=exit
 alias y=yazi_keep_cwd
 alias c=clear
 alias h=herdr
+alias hs='herdr session attach'
 
 alias ls='eza -F --group-directories-first'
 alias la='eza -F -alh --icons --git --group-directories-first'
@@ -14,7 +15,7 @@ alias cat=bat
 alias intel_login='env /usr/bin/arch -x86_64 /bin/zsh --login'
 
 alias packages='brew leaves | fzf'
-alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pipx cargo self_update skills'
+alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pipx cargo self_update pi skills'
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'
