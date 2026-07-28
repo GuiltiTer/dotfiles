@@ -35,3 +35,6 @@ source <(carapace _carapace)
 
 # local bin
 export PATH="/Users/guiltiter/.local/bin:$PATH"
+
+# deja
+export DEJA_CYCLE_KEY='^[[Z'
