@@ -3,7 +3,10 @@ focus_follows_mouse = true
 preset_column_widths = [0.25, 0.33, 0.50, 0.66, 0.75]
 swipe_gesture_fingers = 3
 continuous_swipe = true
-animation_speed = 40
+animation_speed = 100
+
+[decorations]
+workspace_popup_status = false
 
 [bindings]
 
