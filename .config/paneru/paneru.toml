@@ -1,0 +1,61 @@
+[options]
+focus_follows_mouse = true
+preset_column_widths = [0.25, 0.33, 0.50, 0.66, 0.75]
+swipe_gesture_fingers = 3
+continuous_swipe = true
+animation_speed = 40
+
+[bindings]
+
+window_focus_west = "alt - h"
+window_focus_east = "alt - l"
+window_focus_north = "alt - k"
+window_focus_south = "alt - j"
+
+window_swap_west = "alt + shift - h"
+window_swap_east = "alt + shift - l"
+window_swap_north = "alt + shift - k"
+window_swap_south = "alt + shift - j"
+
+
+window_virtualnum_1 = "alt - y"
+window_virtualnum_2 = "alt - u"
+window_virtualnum_3 = "alt - i"
+window_virtualnum_4 = "alt - p"
+window_virtualnum_5 = "alt - o"
+
+window_virtualmovenum_1 = "alt + shift - y"
+window_virtualmovenum_2 = "alt + shift - u"
+window_virtualmovenum_3 = "alt + shift - i"
+window_virtualmovenum_4 = "alt + shift - o"
+window_virtualmovenum_5 = "alt + shift - p"
+
+window_swap_first = "alt + cmd - h"
+window_swap_last = "alt + cmd - l"
+
+window_center = "alt - c"
+window_resize = "alt - r"
+window_fullwidth = "alt - return"
+window_manage = "ctrl + alt - t"
+window_stack = "alt - ]"
+window_unstack = "alt + shift - ]"
+window_nextdisplay = "alt + shift - n"
+mouse_nextdisplay = "alt - n"
+window_equalize = "alt + shift - e"
+quit = "ctrl + alt - q"
+
+[windows]
+
+[windows.pip]
+title = "Picture.*(in)?.*[Pp]icture"
+floating = true
+
+[windows.popup]
+title = "Unimportant popup window"
+dont_focus = true
+index = 100
+
+[windows.all]
+title = ".*"
+horizontal_padding = 4
+vertical_padding = 2
