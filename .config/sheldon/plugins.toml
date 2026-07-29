@@ -12,25 +12,36 @@
 
 shell = "zsh"
 
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
 [plugins]
 
-[plugins.lazyload]
-github = "qoomon/zsh-lazyload"
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
-
-[plugins.zim-env]
-github = "zimfw/environment"
+apply = ["defer"]
 
 [plugins.autopair]
 github = "hlissner/zsh-autopair"
+apply = ["defer"]
 
 [plugins.syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"
+apply = ["defer"]
 
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
+apply = ["defer"]
+
+[plugins.zim-env]
+github = "zimfw/environment"
+apply = ["defer"]
+
+[plugins.lazyload]
+github = "qoomon/zsh-lazyload"
 
 # For example:
 #
