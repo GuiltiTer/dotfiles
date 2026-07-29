@@ -1,15 +1,3 @@
-# homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-#cargo
-. "$HOME/.cargo/env"
-
-# sheldon
-eval "$(sheldon source)"
-
-# starship
-eval "$(starship init zsh)"
-
 # mise
 eval "$(mise activate zsh)"
 
@@ -31,11 +19,8 @@ eval "$(direnv hook zsh)"
 # atuin
 eval "$(atuin init zsh --disable-up-arrow)"
 
-# go
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
-
 # carapce
+autoload -Uz compinit && compinit
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 source <(carapace _carapace)
 

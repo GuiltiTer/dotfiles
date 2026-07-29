@@ -5,5 +5,3 @@ export KEYTIMEOUT=10
 
 setopt HIST_IGNORE_ALL_DUPS
 bindkey -v
-
-autoload -Uz compinit && compinit

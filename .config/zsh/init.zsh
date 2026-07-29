@@ -1,10 +1,14 @@
-for mod (
-  env
-  aliases
-  app_configs
-  functions
-  keymaps
-  prox
-  styles
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-) source "$(dirname "$0")/modules/$mod.zsh"
+#cargo
+. "$HOME/.cargo/env"
+
+# go
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
+# sheldon
+eval "$(sheldon source)"
+
+# starship
+eval "$(starship init zsh)"
