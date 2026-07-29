@@ -4,9 +4,10 @@ alias c=clear
 alias h=herdr
 alias hs='herdr session attach'
 
-alias ls='eza -F --group-directories-first'
-alias la='eza -F -alh --icons --git --group-directories-first'
-alias l='eza -F -lh --icons --git --group-directories-first'
+alias ls='lsd -F --group-directories-first'
+alias la='lsd -F -alh --icon always --git --group-directories-first'
+alias l='lsd -F -lh --icon always --git --group-directories-first'
+alias lt='lsd -F -lh --icon always --git --tree'
 
 alias v=nvim
 alias lzg=lazygit
@@ -19,10 +20,6 @@ alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pi
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'
-
-alias os='query_to_opencode_server'
-alias om='select_opencode_model'
-
 
 alias -s json='jless'
 alias -s csv='csvlens'

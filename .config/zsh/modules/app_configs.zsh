@@ -1,6 +1,15 @@
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+#cargo
+. "$HOME/.cargo/env"
+
+# sheldon
+eval "$(sheldon source)"
+
+# starship
+eval "$(starship init zsh)"
+
 # mise
 eval "$(mise activate zsh)"
 
@@ -26,9 +35,6 @@ eval "$(atuin init zsh --disable-up-arrow)"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
-# jetbrains toolbox
-export PATH="$PATH:/Users/guiltiter/Library/Application Support/JetBrains/Toolbox/scripts"
-
 # carapce
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 source <(carapace _carapace)
@@ -38,3 +44,4 @@ export PATH="/Users/guiltiter/.local/bin:$PATH"
 
 # deja
 export DEJA_CYCLE_KEY='^[[Z'
+eval "$(deja init zsh)"
