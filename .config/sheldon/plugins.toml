@@ -28,6 +28,10 @@ github = "Aloxaf/fzf-tab"
 github = "zdharma-continuum/fast-syntax-highlighting"
 apply = ["defer"]
 
+[plugins.zsh-vi-mode]
+github = "jeffreytse/zsh-vi-mode"
+apply = ["defer"]
+
 [plugins.lazyload]
 github = "qoomon/zsh-lazyload"
 
