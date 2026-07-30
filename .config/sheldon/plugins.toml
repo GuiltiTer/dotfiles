@@ -31,6 +31,9 @@ apply = ["defer"]
 [plugins.zsh-vi-mode]
 github = "jeffreytse/zsh-vi-mode"
 apply = ["defer"]
+hooks.pre = """
+ZVM_CURSOR_STYLE_ENABLED=false
+"""
 
 [plugins.lazyload]
 github = "qoomon/zsh-lazyload"
