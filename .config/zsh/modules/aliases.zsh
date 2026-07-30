@@ -5,8 +5,8 @@ alias h=herdr
 alias hs='herdr session attach'
 
 alias ls='lsd -F --group-directories-first'
-alias la='lsd -F -alh --icon always --git --group-directories-first'
-alias l='lsd -F -lh --icon always --git --group-directories-first'
+alias la='lsd -F -alh --git --group-directories-first'
+alias l='lsd -F -lh --git --group-directories-first'
 alias lt='lsd -F -lh --icon always --git --tree'
 
 alias v=nvim
@@ -16,7 +16,7 @@ alias cat=bat
 alias intel_login='env /usr/bin/arch -x86_64 /bin/zsh --login'
 
 alias packages='brew leaves | fzf'
-alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pipx cargo self_update pi skills'
+alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pipx cargo self_update pi skills sheldon'
 alias gitignore='npx add-gitignore'
 alias icat='kitty +kitten icat'
 alias yaegi='rlwrap yaegi'

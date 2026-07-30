@@ -33,5 +33,4 @@ keybind = cmd+digit_9=text:\x1b[57;9u
 
 keybind = cmd+t=unbind
 
-custom-shader-animation = always
 custom-shader = shaders/cursor_warp.glsl

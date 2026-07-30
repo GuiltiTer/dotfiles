@@ -4,7 +4,7 @@ function proxset() {
     local name="$1"
 
     if [[ -z "$name" ]]; then
-        print -u2 "usage: prox_set <profile>"
+        print -u2 "usage: proxset <profile>"
         return 1
     fi
 

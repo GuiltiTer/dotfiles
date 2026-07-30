@@ -7,28 +7,25 @@ defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file 
 
 [plugins]
 
+[plugins.zim-env]
+github = "zimfw/environment"
+
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
-apply = ["defer"]
+hooks.post = "autoload -Uz compinit && compinit"
 
 [plugins.autopair]
 github = "hlissner/zsh-autopair"
 apply = ["defer"]
 
-[plugins.syntax-highlighting]
-github = "zdharma-continuum/fast-syntax-highlighting"
-apply = ["defer"]
-
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
-hooks.pre = "autoload -Uz compinit && compinit"
-apply = ["defer"]
 
-[plugins.zim-env]
-github = "zimfw/environment"
+[plugins.syntax-highlighting]
+github = "zdharma-continuum/fast-syntax-highlighting"
 apply = ["defer"]
 
 [plugins.lazyload]

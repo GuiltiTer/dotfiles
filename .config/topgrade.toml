@@ -94,9 +94,6 @@
 
 # Custom commands
 [commands]
-"zinit(self)" = "source ~/.zshrc && zinit self-update"
-"zinit(update)" = "source ~/.zshrc && zinit update --parallel"
-
 
 [python]
 # enable_pip_review = true                         ###disabled by default

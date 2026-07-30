@@ -5,10 +5,10 @@ eval "$(mise activate zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # opam
-lazyload ocaml opam dune utop -- '[[ ! -r /Users/guiltiter/.opam/opam-init/init.zsh ]] || source /Users/guiltiter/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null'
+lazyload ocaml opam dune utop -- '[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null'
 
 # ghcup
-lazyload ghcup ghci ghc cabal stack -- '[ -f "/Users/guiltiter/.ghcup/env" ] && source "/Users/guiltiter/.ghcup/env"'
+lazyload ghcup ghci ghc cabal stack -- '[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"'
 
 # curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
@@ -20,13 +20,18 @@ eval "$(direnv hook zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 
 # carapce
-autoload -Uz compinit && compinit
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 source <(carapace _carapace)
 
 # local bin
-export PATH="/Users/guiltiter/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # deja
 export DEJA_CYCLE_KEY='^[[Z'
 eval "$(deja init zsh)"
+
+
+# pager
+export PAGER=less
+export LESS='-FRX'
+export MANPAGER=nvimpager
