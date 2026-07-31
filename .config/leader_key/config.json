@@ -97,6 +97,7 @@
     },
     {
       "key" : "s",
+      "label" : "Switcher",
       "type" : "url",
       "value" : "raycast-x://extensions/raycast/navigation/switch-windows"
     },
