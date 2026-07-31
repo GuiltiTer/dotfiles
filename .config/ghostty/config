@@ -14,7 +14,7 @@ macos-titlebar-style = hidden
 quick-terminal-position = center
 quick-terminal-size = 80%,80%
 
-keybind = global:cmd+shift+`=toggle_quick_terminal
+keybind = global:cmd+`=toggle_quick_terminal
 
 keybind = super+j=scroll_page_lines:1
 keybind = super+k=scroll_page_lines:-1
