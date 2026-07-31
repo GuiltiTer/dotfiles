@@ -10,8 +10,8 @@ new_cwd = "follow"
 next_tab = "ctrl+tab"
 previous_tab = "ctrl+shift+tab"
 switch_tab = "cmd+1..9"
-new_tab = "cmd+t"
-toggle_sidebar = "cmd+b"
+new_tab = "prefix+t"
+toggle_sidebar = "prefix+b"
 
 [experimental]
 kitty_graphics = true

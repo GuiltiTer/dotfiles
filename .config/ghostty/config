@@ -31,6 +31,4 @@ keybind = cmd+digit_7=text:\x1b[55;9u
 keybind = cmd+digit_8=text:\x1b[56;9u
 keybind = cmd+digit_9=text:\x1b[57;9u
 
-keybind = cmd+t=unbind
-
 custom-shader = shaders/cursor_warp.glsl
