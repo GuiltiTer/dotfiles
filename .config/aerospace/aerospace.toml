@@ -20,7 +20,7 @@ default-root-container-layout      = "accordion"
 default-root-container-orientation = "auto"
 key-mapping.preset                 = "qwerty"
 on-focused-monitor-changed         = ["move-mouse monitor-lazy-center"]
-focus-follows-mouse.enabled        = true
+# focus-follows-mouse.enabled        = true
 
 accordion-padding = 32
 
