@@ -1,0 +1,50 @@
+{
+  "colorSources": {
+    "editor": "theme",
+    "userMessages": "theme",
+    "starship": "theme"
+  },
+  "separator": "pipe",
+  "icons": {
+    "mode": "auto"
+  },
+  "features": {
+    "editor": true,
+    "copyFriendly": true,
+    "viewportIndicators": true,
+    "statusLine": true
+  },
+  "editorBorderColorMode": "static",
+  "editorModelLabel": "id",
+  "responsiveFooter": true,
+  "compactFooterMaxLines": 2,
+  "contextStyle": "text+gauge",
+  "pathDisplay": {
+    "mode": "full",
+    "depth": 3
+  },
+  "footerSegments": {
+    "cwd": true,
+    "sessionName": true,
+    "runtime": true,
+    "modelInfo": false,
+    "context": true,
+    "tokens": true,
+    "cost": true,
+    "sessionDuration": false,
+    "username": false,
+    "time": false,
+    "os": false,
+    "packageVersion": false
+  },
+  "extensionStatuses": {
+    "defaultPlacement": "right",
+    "colorModes": {
+      "pi-lens-lsp": "zentui",
+      "usage": "zentui"
+    },
+    "placements": {
+      "usage": "right"
+    }
+  }
+}

@@ -1,2 +1,3 @@
 [tools]
 node = "lts"
+"npm:@agegr/pi-web" = "latest"
