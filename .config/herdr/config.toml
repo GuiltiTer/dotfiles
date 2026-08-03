@@ -13,5 +13,17 @@ switch_tab = "cmd+1..9"
 new_tab = "prefix+t"
 toggle_sidebar = "prefix+b"
 
+[[keys.command]]
+key = "prefix+shift+o"
+type = "plugin_action"
+command = "herdr-file-viewer.open-file-viewer"
+description = "open file viewer in split"
+
+[[keys.command]]
+key = "prefix+o"
+type = "plugin_action"
+command = "herdr-file-viewer.open-file-viewer-tab"
+description = "open file viewer in tab"
+
 [experimental]
 kitty_graphics = true
