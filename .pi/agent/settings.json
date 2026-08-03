@@ -32,6 +32,7 @@
     "npm:@narumitw/pi-usage",
     "npm:@tintinweb/pi-subagents",
     "npm:pi-rtk-optimizer",
-    "npm:pi-tool-display"
+    "npm:pi-tool-display",
+    "npm:pi-autoresearch"
   ]
 }
