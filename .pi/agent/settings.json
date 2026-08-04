@@ -33,6 +33,7 @@
     "npm:@tintinweb/pi-subagents",
     "npm:pi-rtk-optimizer",
     "npm:pi-tool-display",
-    "npm:pi-autoresearch"
+    "npm:pi-autoresearch",
+    "npm:pi-nvim"
   ]
 }
