@@ -30,6 +30,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export DEJA_CYCLE_KEY='^[[Z'
 eval "$(deja init zsh)"
 
+# obsidian
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 # pager
 export PAGER=less
