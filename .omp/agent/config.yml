@@ -1,5 +1,5 @@
 modelRoles: 
-  default: openai-codex/gpt-5.6-luna:low
+  default: openai-codex/gpt-5.6-luna:high
 symbolPreset: unicode
 theme: 
   dark: dark-tokyo-night
@@ -7,8 +7,29 @@ setupVersion: 1
 defaultThinkingLevel: auto
 tools: 
   approvalMode: always-ask
-statusLine: 
-  preset: compact
+
+statusLine:
+  preset: custom
   separator: none
   transparent: true
+  showHookStatus: true
   compactThinkingLevel: false
+
+  leftSegments:
+    - model
+    - mode
+    - path
+    - git
+
+  rightSegments:
+    - session_name
+    - token_total
+    - context_pct
+    - cost
+
+
+hideThinkingBlock: true
+startup: 
+  quiet: true
+vault: 
+  enabled: true
