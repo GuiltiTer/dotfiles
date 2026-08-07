@@ -6,7 +6,7 @@ theme:
 setupVersion: 1
 defaultThinkingLevel: auto
 tools: 
-  approvalMode: always-ask
+  approvalMode: yolo
 statusLine: 
   preset: custom
   separator: none
