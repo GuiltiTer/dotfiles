@@ -4,10 +4,10 @@ alias c=clear
 alias h=herdr
 alias hs='herdr session attach'
 
-alias ls='lsd -F --group-directories-first'
-alias la='lsd -F -alh --git --group-directories-first'
-alias l='lsd -F -lh --git --group-directories-first'
-alias lt='lsd -F -lh --icon always --git --tree'
+alias ls='eza -F --group-directories-first'
+alias la='eza -F -alh --icons --git --group-directories-first'
+alias l='eza -F -lh --icons --git --group-directories-first'
+alias lt='eza -F -lh --icons --git --tree'
 
 alias v=nvim
 alias lzg=lazygit
