@@ -1,11 +1,13 @@
 enter_accept = false
+style = "compact"
 invert = true
 inline_height = 20
 show_help = false
-show_preview = false
 show_tabs = false
+show_numeric_shortcuts = false
 command_chaining = true
-keymap_mode = "vim-normal"
+keymap_mode = "vim-insert"
+keymap_cursor = { vim_insert = "blink-bar", vim_normal = "steady-block" }
 
 [keys]
 scroll_exits = false
