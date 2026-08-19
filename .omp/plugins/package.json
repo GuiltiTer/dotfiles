@@ -1,0 +1,11 @@
+{
+  "name": "omp-plugins",
+  "private": true,
+  "dependencies": {
+    "graphify-pi": "npm:graphify-pi",
+    "pi-mcp-adapter": "npm:pi-mcp-adapter",
+    "pi-protected-paths": "npm:pi-protected-paths",
+    "pi-subagents": "npm:pi-subagents",
+    "pi-web-access": "npm:pi-web-access"
+  }
+}
