@@ -1,9 +1,9 @@
 modelRoles: 
   default: openai-codex/gpt-5.6-luna:low
-symbolPreset: unicode
+symbolPreset: nerd
 theme: 
   dark: dark-tokyo-night
-setupVersion: 1
+setupVersion: 2
 defaultThinkingLevel: auto
 tools: 
   approvalMode: yolo
@@ -28,3 +28,5 @@ startup:
   quiet: true
 vault: 
   enabled: true
+composer: 
+  shape: rail
