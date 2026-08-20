@@ -6,7 +6,9 @@ theme:
 setupVersion: 2
 defaultThinkingLevel: auto
 tools: 
-  approvalMode: yolo
+  approvalMode: always-ask
+  approval: 
+    web_search: allow
 statusLine: 
   preset: custom
   separator: none
