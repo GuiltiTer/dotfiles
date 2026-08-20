@@ -6,7 +6,6 @@ shell = "zsh"
 defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
 
 [plugins]
-
 [plugins.zim-env]
 github = "zimfw/environment"
 
@@ -30,9 +29,11 @@ apply = ["defer"]
 
 [plugins.zsh-vi-mode]
 github = "jeffreytse/zsh-vi-mode"
-apply = ["defer"]
 hooks.pre = """
-ZVM_CURSOR_STYLE_ENABLED=false
+ZVM_CURSOR_STYLE_ENABLED=true
+ZVM_INSERT_MODE_CURSOR=$'\\e[5 q'
+ZVM_NORMAL_MODE_CURSOR=$'\\e[2 q'
+ZVM_VISUAL_MODE_CURSOR=$'\\e[2 q'
 """
 
 [plugins.lazyload]
