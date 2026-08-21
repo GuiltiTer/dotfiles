@@ -1,5 +1,6 @@
 return {
   "NeogitOrg/neogit",
+  cmd = {"Neogit"},
   keys = { { "<Leader>gg", mode = { "n" }, function() require("neogit").open() end, desc = "Neogit" } },
   opts = {
     graph_style = "kitty",
