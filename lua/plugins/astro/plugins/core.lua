@@ -18,8 +18,8 @@ return {
     },
     options = {
       opt = {
-        relativenumber = false,
-        number = false,
+        relativenumber = true,
+        number = true,
         spell = false,
         wrap = false,
 
