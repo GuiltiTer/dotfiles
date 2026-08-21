@@ -2,16 +2,16 @@ alias q=exit
 alias y=yazi_keep_cwd
 alias c=clear
 alias h=herdr
+alias v=nvim
+alias lzg=lazygit
+alias cat=bat
 alias hs='herdr session attach'
+alias ng='nvim "+Neogit kind=replace"'
 
 alias ls='eza -F --group-directories-first'
 alias la='eza -F -alh --icons --git --group-directories-first'
 alias l='eza -F -lh --icons --git --group-directories-first'
 alias lt='eza -F -lh --icons --git --tree'
-
-alias v=nvim
-alias lzg=lazygit
-alias cat=bat
 
 alias intel_login='env /usr/bin/arch -x86_64 /bin/zsh --login'
 
