@@ -94,7 +94,6 @@ brew "uv"
 brew "vim"
 brew "watchman"
 brew "wget"
-brew "yadm"
 brew "yank"
 brew "yazi", args: ["HEAD"]
 brew "yq"
