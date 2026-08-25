@@ -1,0 +1,15 @@
+[picker]
+source_order = [
+  "workspace",
+  "agent",
+  "project",
+  "session",
+  "zoxide",
+  "root",
+  "server",
+  "quick",
+  "plugin",
+]
+
+preview = false
+vim_mode = false

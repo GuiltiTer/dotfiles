@@ -33,6 +33,12 @@ type = "plugin_action"
 command = "herdr-file-viewer.open-file-viewer-tab"
 description = "open file viewer in tab"
 
+[[keys.command]]
+key = "prefix+f"
+type = "plugin_action"
+command = "herdr-navigator.open"
+description = "finder"
+
 [ui]
 hide_tab_bar_when_single_tab = true
 sidebar_start_collapsed = true
