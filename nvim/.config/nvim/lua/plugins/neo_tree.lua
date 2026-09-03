@@ -2,6 +2,11 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   lazy = true,
   opts = {
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+      },
+    },
     source_selector = {
       winbar = false,
       sources = {
