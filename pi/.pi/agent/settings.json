@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.84.3",
+  "lastChangelogVersion": "0.84.4",
   "theme": "tokyo-night-dark",
   "defaultProvider": "openai-codex",
   "quietStartup": true,
