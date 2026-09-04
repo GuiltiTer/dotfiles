@@ -28,6 +28,7 @@
     "npm:pi-rtk-optimizer",
     "npm:pi-tool-display",
     "npm:pi-nvim",
-    "npm:pi-antigravity"
+    "npm:pi-antigravity",
+    "npm:pi-ollama-cloud"
   ]
 }
