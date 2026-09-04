@@ -4,7 +4,7 @@
   "defaultProvider": "openai-codex",
   "quietStartup": true,
   "defaultModel": "gpt-5.6-luna",
-  "defaultThinkingLevel": "low",
+  "defaultThinkingLevel": "high",
   "packages": [
     {
       "source": "npm:pi-agent-extensions",
@@ -17,11 +17,6 @@
       "themes": []
     },
     "npm:@juicesharp/rpiv-ask-user-question",
-    "npm:@juicesharp/rpiv-todo",
-    "npm:@juicesharp/rpiv-advisor",
-    "npm:@juicesharp/rpiv-i18n",
-    "npm:@juicesharp/rpiv-args",
-    "npm:@juicesharp/rpiv-workflow",
     "npm:pi-web-access",
     "npm:pi-zentui",
     "npm:pi-lens",
@@ -30,10 +25,9 @@
     "npm:@narumitw/pi-worktree",
     "npm:pi-blackhole",
     "npm:@narumitw/pi-usage",
-    "npm:@tintinweb/pi-subagents",
     "npm:pi-rtk-optimizer",
     "npm:pi-tool-display",
-    "npm:pi-autoresearch",
-    "npm:pi-nvim"
+    "npm:pi-nvim",
+    "npm:pi-antigravity"
   ]
 }
