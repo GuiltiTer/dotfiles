@@ -1,3 +1,4 @@
 [tools]
 node = "lts"
 "npm:@agegr/pi-web" = "latest"
+"npm:@earendil-works/pi-coding-agent" = "latest"
