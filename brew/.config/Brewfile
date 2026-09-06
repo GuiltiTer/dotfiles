@@ -58,7 +58,6 @@ brew "ollama", restart_service: :changed
 brew "opam"
 brew "pandoc"
 brew "parallel"
-brew "pi-coding-agent"
 brew "pixi"
 brew "pkgconf"
 brew "pnpm"
@@ -100,7 +99,7 @@ brew "yq"
 brew "yt-dlp"
 brew "zig"
 brew "zoxide"
-brew "can1357/tap/omp", trusted: true
+brew "gentleman-programming/tap/engram", trusted: true
 brew "giammarco-ferranti/deja/deja", trusted: true
 brew "modem-dev/tap/hunk", trusted: true
 cask "nikitabobko/tap/aerospace"
@@ -173,5 +172,7 @@ cargo "paneru"
 uv "graphifyy"
 uv "ipython"
 uv "ruff"
+uv "trafilatura"
 uv "ty"
+npm "@earendil-works/pi-coding-agent"
 npm "corepack"
