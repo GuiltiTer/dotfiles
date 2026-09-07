@@ -28,7 +28,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # deja
 export DEJA_CYCLE_KEY='^[[Z'
-eval "$(deja init zsh)"
+[ -f "$HOME/.local/share/deja/init.zsh" ] && source $HOME/.local/share/deja/init.zsh
 
 # obsidian
 export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
