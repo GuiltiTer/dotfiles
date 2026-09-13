@@ -1,7 +1,6 @@
 return {
   "folke/sidekick.nvim",
   keys = {
-    { "<leader>a", mode = { "n", "v", "x" }, desc = "󰫢 Agent" },
     { "<leader>aa", function() require("sidekick.cli").toggle() end, desc = "Toggle cli" },
     { "<leader>aC", function() require("sidekick.cli").close() end, desc = "Close session" },
     { "<leader>ap", function() require("sidekick.cli").prompt() end, mode = { "n", "x" }, desc = "Select prompt" },

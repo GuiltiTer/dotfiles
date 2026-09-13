@@ -20,3 +20,4 @@ end, { desc = "Focus current" })
 key({ "t" }, "<esc><esc>", "<c-\\><c-n>", { desc = "Escapce" })
 
 group({ "n" }, "<leader>;", "󱤵 Run")
+group({ "n", "v", "x" }, "<leader>a", "󰫢 Agent")
