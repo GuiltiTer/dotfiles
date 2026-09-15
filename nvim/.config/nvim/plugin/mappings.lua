@@ -17,7 +17,7 @@ key({ "n" }, "<C-w>i", function()
   vim.cmd [[wincmd _]]
 end, { desc = "Focus current" })
 
-key({ "t" }, "<esc><esc>", "<c-\\><c-n>", { desc = "Escapce" })
+key({ "t" }, "<c-\\><c-\\>", "<c-\\><c-n>", { desc = "Escapce" })
 
 group({ "n" }, "<leader>;", "󱤵 Run")
 group({ "n", "v", "x" }, "<leader>a", "󰫢 Agent")
