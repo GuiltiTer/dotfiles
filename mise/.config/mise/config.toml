@@ -1,3 +1,6 @@
 [tools]
 node = "lts"
 "npm:@earendil-works/pi-coding-agent" = "latest"
+
+[settings]
+auto_update = true
