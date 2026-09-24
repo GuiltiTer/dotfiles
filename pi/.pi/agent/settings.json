@@ -3,7 +3,7 @@
 	"theme": "tokyo-night",
 	"defaultProvider": "openai-codex",
 	"quietStartup": true,
-	"defaultModel": "gpt-5.6-luna",
+	"defaultModel": "gpt-6-luna",
 	"defaultThinkingLevel": "high",
 	"packages": [
 		"npm:pi-subagents",
