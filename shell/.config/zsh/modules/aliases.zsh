@@ -13,9 +13,22 @@ alias la='eza -F -alh --icons --git --group-directories-first'
 alias l='eza -F -lh --icons --git --group-directories-first'
 alias lt='eza -F -lh --icons --git --tree'
 
-alias upgrade='topgrade --only brew_cask brew_formula custom_commands yazi go pipx cargo self_update skills sheldon mise rustup'
-
 alias -s json='jless'
 alias -s csv='csvlens'
 for e (zip rar dmg pdf) alias -s $e='open'
 for e (py cpp c++ c h go rs lua toml txt md) alias -s $e='$EDITOR'
+
+local topgrade_managers=(
+  brew_cask
+  brew_formula
+  custom_commands
+  yazi
+  cargo
+  self_update
+  skills
+  sheldon
+  mise
+  rustup
+  go
+)
+alias upgrade="topgrade --only ${topgrade_managers}"
