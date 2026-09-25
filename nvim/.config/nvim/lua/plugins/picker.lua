@@ -43,6 +43,17 @@ return {
     },
   },
   opts = {
-    picker = {},
+    picker = {
+      sources = {
+        grep = { hidden = true },
+      },
+      win = {
+        input = {
+          keys = {
+            ["<C-h>"] = { "toggle_hidden", mode = { "n", "i" } },
+          },
+        },
+      },
+    },
   },
 }
