@@ -1,10 +1,11 @@
 {
-	"lastChangelogVersion": "0.99.1",
-	"theme": "tokyo-night",
-	"defaultProvider": "openai-codex",
 	"quietStartup": true,
+	"theme": "tokyo-night",
 	"defaultModel": "gpt-6-luna",
+	"defaultProvider": "openai-codex",
 	"defaultThinkingLevel": "high",
+	"lastChangelogVersion": "1.0.0",
+	"npmCommand": ["mise", "exec", "node@24.21.0", "--", "npm"],
 	"packages": [
 		"npm:pi-subagents",
 		"npm:pi-web-access",
@@ -23,6 +24,6 @@
 		"npm:pi-ask-user",
 		"npm:pi-tool-display",
 		"npm:@firstpick/pi-themes-bundle",
-		"npm:gentle-engram@0.1.8"
+		"npm:gentle-engram@0.1.16"
 	]
 }
