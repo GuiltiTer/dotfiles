@@ -1,5 +1,5 @@
 {
-	"lastChangelogVersion": "0.87.1",
+	"lastChangelogVersion": "0.99.1",
 	"theme": "tokyo-night",
 	"defaultProvider": "openai-codex",
 	"quietStartup": true,
@@ -23,7 +23,6 @@
 		"npm:pi-ask-user",
 		"npm:pi-tool-display",
 		"npm:@firstpick/pi-themes-bundle",
-		"npm:gentle-engram@0.1.8",
-		"npm:pi-typesafe"
+		"npm:gentle-engram@0.1.8"
 	]
 }
