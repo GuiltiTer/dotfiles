@@ -1,5 +1,5 @@
 {
-	"quietStartup": true,
+	"quietStartup": false,
 	"theme": "tokyo-night",
 	"defaultModel": "gpt-6-luna",
 	"defaultProvider": "openai-codex",
@@ -11,7 +11,6 @@
 		"npm:pi-web-access",
 		"npm:pi-zentui",
 		"npm:pi-lens",
-		"npm:pi-mcp-adapter",
 		"npm:@narumitw/pi-plan-mode",
 		"npm:@narumitw/pi-worktree",
 		"npm:pi-blackhole",
@@ -24,6 +23,6 @@
 		"npm:pi-ask-user",
 		"npm:pi-tool-display",
 		"npm:@firstpick/pi-themes-bundle",
-		"npm:gentle-engram@0.1.16"
+		"npm:gentle-engram@0.2.0"
 	]
 }

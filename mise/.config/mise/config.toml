@@ -1,6 +1,7 @@
 [tools]
 node = "lts"
 "npm:@earendil-works/pi-coding-agent" = "latest"
+"npm:@firecrawl/anydoc" = "latest"
 
 [settings]
 auto_update = true
