@@ -22,5 +22,6 @@
 		"npm:pi-tool-display",
 		"npm:@firstpick/pi-themes-bundle",
 		"npm:gentle-engram@0.2.0"
-	]
+	],
+	"deviceId": "e20e65a1-b7e2-438d-9e00-c92395026651"
 }
