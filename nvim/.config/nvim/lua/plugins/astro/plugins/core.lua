@@ -23,6 +23,8 @@ return {
         spell = false,
         wrap = false,
 
+        clipboard = "",
+
         showtabline = 0,
         mousescroll = "ver:1,hor:1",
         foldcolumn = "0",
