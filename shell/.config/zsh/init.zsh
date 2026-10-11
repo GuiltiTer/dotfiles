@@ -12,6 +12,9 @@ export GOPATH="$HOME/go"
 typeset -gU path PATH
 path+=("$GOPATH/bin")
 
+# bun
+export PATH="/Users/guiltiter/.bun/bin:$PATH"
+
 # starship
 eval "$(starship init zsh)"
 

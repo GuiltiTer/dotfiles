@@ -19,16 +19,17 @@ for e (zip rar dmg pdf) alias -s $e='open'
 for e (py cpp c++ c h go rs lua toml txt md) alias -s $e='$EDITOR'
 
 local topgrade_managers=(
+  self_update
   brew_cask
   brew_formula
-  custom_commands
-  yazi
-  cargo
-  self_update
-  skills
-  sheldon
   mise
+  bun_packages
   rustup
+  cargo
   go
+  sheldon
+  skills
+  yazi
+  custom_commands
 )
 alias upgrade="topgrade --only ${topgrade_managers}"
