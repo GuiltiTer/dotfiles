@@ -1,6 +1,5 @@
 [tools]
 node = "lts"
-"npm:@firecrawl/anydoc" = "latest"
 
 [settings]
 self_update.auto = true
