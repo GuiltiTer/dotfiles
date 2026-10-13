@@ -32,6 +32,7 @@ return {
 			helperFormat = {
 				atScreenEdge = 0,
 				radius = 16,
+				fillColor = { white = 0, alpha = 0.9 },
 				strokeColor = { white = 0, alpha = 0 },
 				textFont = "JetBrains Mono",
 				textSize = 16,
@@ -40,13 +41,13 @@ return {
 		fn = function(rb)
 			local key = rb.singleKey
 			local keymap = {
-				[key("m", "󰉋 media")] = {
+				[key("m", "media")] = {
 					[key("m", "music")] = app("Music"),
 					[key("M", "messages")] = app("Messages"),
 					[key("t", "telegram")] = app("Telegram"),
 				},
 
-				[key("f", "󰉋 find")] = {
+				[key("f", "find")] = {
 					[key("d", "downloads")] = shell("open ~/Downloads"),
 					[key("u", "user")] = shell("open ~"),
 					[key("f", "find")] = url("raycast-x://extensions/raycast/file-search/search-files"),
