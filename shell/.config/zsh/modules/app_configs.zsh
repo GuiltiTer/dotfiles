@@ -1,6 +1,3 @@
-# mise
-eval "$(mise activate zsh)"
-
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
@@ -10,11 +7,14 @@ lazyload ocaml opam dune utop -- '[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || s
 # ghcup
 lazyload ghcup ghci ghc cabal stack -- '[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"'
 
-# curl
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-
 # direnv
 eval "$(direnv hook zsh)"
+
+# mise
+eval "$(mise activate zsh)"
+
+#cargo
+. "$HOME/.cargo/env"
 
 # atuin
 eval "$(atuin init zsh --disable-up-arrow)"
@@ -22,12 +22,6 @@ eval "$(atuin init zsh --disable-up-arrow)"
 # carapce
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 source <(carapace _carapace)
-
-# local bin
-export PATH="$HOME/.local/bin:$PATH"
-
-# obsidian
-export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 # pager
 export PAGER=less
