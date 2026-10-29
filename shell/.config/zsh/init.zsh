@@ -1,3 +1,5 @@
+autoload -Uz compinit && compinit
+
 # env
 source ~/.config/zsh/env.zsh
 

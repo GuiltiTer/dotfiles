@@ -1,0 +1,4 @@
+[highlighting]
+theme = "patina"
+
+dynamic = { callables = true, paths = "partial" }

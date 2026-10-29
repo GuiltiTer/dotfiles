@@ -14,7 +14,6 @@ github = "romkatv/zsh-defer"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
-hooks.post = "autoload -Uz compinit && compinit"
 
 [plugins.autopair]
 github = "hlissner/zsh-autopair"
@@ -22,10 +21,6 @@ apply = ["defer"]
 
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
-
-[plugins.syntax-highlighting]
-github = "zdharma-continuum/fast-syntax-highlighting"
-apply = ["defer"]
 
 [plugins.zsh-vi-mode]
 github = "jeffreytse/zsh-vi-mode"
