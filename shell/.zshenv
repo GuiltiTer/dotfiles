@@ -1,3 +1,2 @@
-export XDG_CONFIG_HOME="$HOME/.config"
-export EDITOR=/opt/homebrew/bin/nvim
-export VISUAL=$EDITOR
+export ZDOTDIR="$HOME/.config/zsh"
+. $ZDOTDIR/.zshenv

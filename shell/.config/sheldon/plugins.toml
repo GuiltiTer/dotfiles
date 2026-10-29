@@ -14,6 +14,7 @@ github = "romkatv/zsh-defer"
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
+apply = ["defer"]
 
 [plugins.autopair]
 github = "hlissner/zsh-autopair"
@@ -21,6 +22,7 @@ apply = ["defer"]
 
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
+apply = ["defer"]
 
 [plugins.zsh-vi-mode]
 github = "jeffreytse/zsh-vi-mode"
@@ -30,9 +32,6 @@ ZVM_INSERT_MODE_CURSOR=$'\\e[5 q'
 ZVM_NORMAL_MODE_CURSOR=$'\\e[2 q'
 ZVM_VISUAL_MODE_CURSOR=$'\\e[2 q'
 """
-
-[plugins.lazyload]
-github = "qoomon/zsh-lazyload"
 
 [plugins.mods]
 local = "~/.config/zsh/modules"
