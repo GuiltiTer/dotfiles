@@ -51,6 +51,7 @@ return {
 					[key("d", "downloads")] = shell("open ~/Downloads"),
 					[key("u", "user")] = shell("open ~"),
 					[key("f", "find")] = url("raycast-x://extensions/raycast/file-search/search-files"),
+					[key("t", "tabs")] = url("raycast://extensions/loris/safari/cloud-tabs"),
 				},
 
 				[key("t", "terminal")] = app("ghostty"),
