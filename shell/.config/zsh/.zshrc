@@ -1,3 +1,6 @@
+# lig pre
+eval "$("/opt/homebrew/opt/lig/bin/lig" init zsh pre)"
+
 # options
 . $ZDOTDIR/opts.zsh
 
@@ -12,3 +15,6 @@ eval "$(starship init zsh)"
 
 # sheldon
 eval "$(sheldon source)"
+
+# lig post
+eval "$("/opt/homebrew/opt/lig/bin/lig" init zsh post)"

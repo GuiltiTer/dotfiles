@@ -20,19 +20,6 @@ apply = ["defer"]
 github = "hlissner/zsh-autopair"
 apply = ["defer"]
 
-[plugins.fzf-tab]
-github = "Aloxaf/fzf-tab"
-apply = ["defer"]
-
-[plugins.zsh-vi-mode]
-github = "jeffreytse/zsh-vi-mode"
-hooks.pre = """
-ZVM_CURSOR_STYLE_ENABLED=true
-ZVM_INSERT_MODE_CURSOR=$'\\e[5 q'
-ZVM_NORMAL_MODE_CURSOR=$'\\e[2 q'
-ZVM_VISUAL_MODE_CURSOR=$'\\e[2 q'
-"""
-
 [plugins.mods]
 local = "~/.config/zsh/modules"
 use = ["*.zsh"]

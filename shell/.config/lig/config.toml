@@ -1,0 +1,19 @@
+[ui]
+theme = "tokyonight"
+border = "rounded"
+density = "compact"
+description_position = "bottom"
+
+[keys]
+accept = ["enter", "tab"]
+next = ["down", "ctrl-n"]
+prev = ["up", "ctrl-p"]
+dismiss = ["esc"]
+toggle = ["ctrl-space"]
+
+[behavior]
+enter_accepts = "auto"
+insert_space = false
+complete_commands = false
+online = true
+disabled_commands = []
