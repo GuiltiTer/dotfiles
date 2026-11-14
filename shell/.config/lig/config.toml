@@ -3,6 +3,7 @@ theme = "tokyonight"
 border = "rounded"
 density = "compact"
 description_position = "bottom"
+icons = "nerd"
 
 [keys]
 accept = ["enter", "tab"]
