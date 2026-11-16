@@ -17,4 +17,5 @@ enter_accepts = "auto"
 insert_space = false
 complete_commands = false
 online = true
+history = false
 disabled_commands = []
