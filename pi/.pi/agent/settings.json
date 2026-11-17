@@ -4,6 +4,10 @@
 	"defaultModel": "gpt-6-luna",
 	"defaultProvider": "openai-codex",
 	"defaultThinkingLevel": "high",
+	"showHardwareCursor": true,
+	"terminal": {
+		"showTerminalProgress": true
+	},
 	"packages": [
 		"npm:pi-web-access",
 		"npm:pi-zentui",
@@ -21,14 +25,14 @@
 	],
 	"deviceId": "e20e65a1-b7e2-438d-9e00-c92395026651",
 	"extensionChangelogVersions": {
-		"{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0",
-		"{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.0",
+		"{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0",
+		"{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.1",
 		"{\"source\":\"npm:@narumitw/pi-plan-mode\",\"scope\":\"user\"}": "0.60.1",
 		"{\"source\":\"npm:@narumitw/pi-worktree\",\"scope\":\"user\"}": "0.51.10",
 		"{\"source\":\"npm:pi-blackhole\",\"scope\":\"user\"}": "0.5.18",
 		"{\"source\":\"npm:@narumitw/pi-usage\",\"scope\":\"user\"}": "0.69.3",
 		"{\"source\":\"npm:pi-rtk-optimizer\",\"scope\":\"user\"}": "0.9.0",
 		"{\"source\":\"npm:pi-tool-display\",\"scope\":\"user\"}": "0.5.0",
-		"{\"source\":\"npm:@gotgenes/pi-anthropic-auth\",\"scope\":\"user\"}": "3.5.0"
+		"{\"source\":\"npm:@gotgenes/pi-anthropic-auth\",\"scope\":\"user\"}": "3.6.0"
 	}
 }
