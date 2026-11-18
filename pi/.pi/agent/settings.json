@@ -21,7 +21,8 @@
 		"npm:pi-btw",
 		"npm:pi-ask-user",
 		"npm:@firstpick/pi-themes-bundle",
-		"npm:@gotgenes/pi-anthropic-auth"
+		"npm:@gotgenes/pi-anthropic-auth",
+		"npm:context-mode"
 	],
 	"deviceId": "e20e65a1-b7e2-438d-9e00-c92395026651",
 	"extensionChangelogVersions": {
