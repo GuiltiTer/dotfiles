@@ -13,7 +13,6 @@
 		"npm:pi-web-access",
 		"npm:pi-zentui",
 		"npm:pi-lens",
-		"npm:@narumitw/pi-plan-mode",
 		"npm:@narumitw/pi-worktree",
 		"npm:pi-blackhole",
 		"npm:@narumitw/pi-usage",
@@ -28,7 +27,6 @@
 	"extensionChangelogVersions": {
 		"{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0",
 		"{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.1",
-		"{\"source\":\"npm:@narumitw/pi-plan-mode\",\"scope\":\"user\"}": "0.60.1",
 		"{\"source\":\"npm:@narumitw/pi-worktree\",\"scope\":\"user\"}": "0.51.10",
 		"{\"source\":\"npm:pi-blackhole\",\"scope\":\"user\"}": "0.5.18",
 		"{\"source\":\"npm:@narumitw/pi-usage\",\"scope\":\"user\"}": "0.69.3",
