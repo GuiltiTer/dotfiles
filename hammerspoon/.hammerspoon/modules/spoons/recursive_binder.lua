@@ -1,6 +1,8 @@
 local function app(name)
 	return function()
-		hs.application.launchOrFocus(name)
+		hs.timer.doAfter(0, function()
+			hs.application.launchOrFocus(name)
+		end)
 	end
 end
 
@@ -12,7 +14,7 @@ end
 
 local function shell(cmd)
 	return function()
-		hs.execute(cmd, true)
+		hs.task.new("/bin/sh", nil, { "-c", cmd }):start()
 	end
 end
 
